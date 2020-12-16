@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +7,72 @@
   list-style-type: none; }
 
 html {
-  font-family: 'Lato','Arial',sans-serif;
+  font-family: 'Open Sans','Arial',sans-serif;
   font-weight: 300;
   font-size: 62.5%;
-  list-style: none; }
+  list-style: none;
+  color: #fff; }
 
 body {
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding: 2rem; }
+
+.header {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  height: 90vh;
+  position: relative; }
+  .header__nav__links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem; }
+    .header__nav__links__link {
+      margin: 1rem; }
+      .header__nav__links__link a {
+        color: #fff; }
+
+#home-link {
+  margin-right: auto; }
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .header__content__paragraph {
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    border: 4px solid;
+    padding: 1rem; }
+  .header__content-button {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8));
+    transition: transform 400ms; }
+    .header__content-button:hover {
+      transform: translateY(-0.5rem); }
+
+.section-cards {
+  display: flex;
+  justify-content: center; }
+
+.card {
+  width: 20rem;
+  background-color: #fff;
+  height: 30rem;
+  margin: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 7px; }
+
+.swiper-container {
+  width: 600px;
+  height: 300px; }

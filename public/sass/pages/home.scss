@@ -1,5 +1,71 @@
 @import "../base/base.scss";
+@import "../abstracts/mixins.scss";
 
-// .header{
-//     // background-image: ;
-// }
+.header {
+    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)), url("../img/hero.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; 
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    height: 90vh;
+    position: relative;
+
+    &__nav__links{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+
+        &__link{
+            margin: 1rem;
+            
+            & a{
+                color:$base-color;
+            }
+        }
+    }
+}
+#home-link{
+    margin-right: auto;
+}
+
+.header__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    &__paragraph{
+        font-weight: 600;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        border: 4px solid;
+        padding: 1rem;
+    }
+    &-button{
+        @include button-default;
+        background:linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8));
+        transition: transform 400ms;
+        &:hover{
+            transform: translateY(-0.5rem);
+        }
+    }
+    
+}
+.section-cards{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 20rem;
+    background-color: $base-color;
+    height:30rem;
+    margin: 1rem;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 7px;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+  
