@@ -1,6 +1,9 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
 
+a{
+    color: $base-color;
+}
 .header {
     background-image: linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)), url("../img/hero.jpg");
     background-position: center;
@@ -18,9 +21,6 @@
         &__link{
             margin: 1rem;
             
-            & a{
-                color:$base-color;
-            }
         }
     }
 }
@@ -44,28 +44,68 @@
     &-button{
         @include button-default;
         background:linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8));
-        transition: transform 400ms;
-        &:hover{
-            transform: translateY(-0.5rem);
-        }
     }
     
 }
-.section-cards{
-    display: flex;
-    justify-content: center;
-}
+
+// Card Component
+
 .card{
-    width: 20rem;
+    width: 15rem;
     background-color: $base-color;
-    height:30rem;
-    margin: 1rem;
-    box-shadow: 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 7px;
+    height:90%;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
+    border-radius: 1rem;
+    color:lightgrey;
+    font-size: 1.5rem;
+    text-align: center;
 }
-.swiper-container {
-    width: 600px;
-    height: 300px;
+.card-top-1{@include card-top-style("../img/dunns-river.jpg");}
+.card-top-2{@include card-top-style("../img/martha-brae.jpg");}
+.card-top-3{@include card-top-style("../img/negril.jpg");}
+.card-top-4{@include card-top-style("../img/blue-mountain.jpg");}
+.card-top-5{@include card-top-style("../img/rose-hall.jpg");}
+.card-top-6{@include card-top-style("../img/ys-falls.jpg");}
+
+.card-btm{
+    padding-bottom: 3rem;
+    margin-top: 2rem;
+    & li{
+        border-bottom: 1px solid lightgrey;
+        padding: 1rem;
+    }
+    &__button{
+        background-color: #74b9ff;
+        @include button-default;
+        color:$base-color;
+        display: block;
+    }
+}
+.card-top__img{
+    width: 90%;
+    padding: 1rem;
+}
+.swiper-container{
+    width: 85%;
+    height: 100vh;
 }
 
-  
+//  Gallery Component
+.section-gallery{
+    height: 80vh;
+}
+.gallery{
+    display:flex;
+    justify-content: center;
+    & img{
+        width:20%;
+        height: 20rem;
+        margin: 1rem;
+        max-width:20%;
+        transition: transform 400ms;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+ 

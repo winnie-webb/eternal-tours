@@ -9,4 +9,5 @@ app.set("views",path.join(__dirname,"public/views"))
 app.get("/",(req,res) => {
     res.render("index")
 })
+app.get("*",(req,res) => res.send(`<h1 style="text-align:center; font-family : sans-serif">Not Completed Only the home page design is completed</h1>`))
 app.listen(PORT,() => console.log("Server has started"))
