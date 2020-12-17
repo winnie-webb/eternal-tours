@@ -141,9 +141,10 @@ a {
 .card-btm {
   padding-bottom: 3rem;
   margin-top: 2rem; }
-  .card-btm li {
+  .card-btm p {
     border-bottom: 1px solid lightgrey;
-    padding: 1rem; }
+    padding: 1rem;
+    font-weight: bold; }
   .card-btm__button {
     background-color: #74b9ff;
     padding: 1rem;
@@ -154,7 +155,8 @@ a {
     width: 60%;
     transition: transform 400ms;
     color: #fff;
-    display: block; }
+    display: block;
+    margin-top: 7rem; }
     .card-btm__button:hover {
       transform: translateY(-0.5rem); }
 
