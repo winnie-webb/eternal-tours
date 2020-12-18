@@ -10,3 +10,26 @@ color: rgb(167, 167, 167);
 @include button-default(linear-gradient(rgb(255,255,255),rgb(255,255,255)));
 }
 }
+
+h2{
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.services{
+    color: rgb(71, 71, 71);
+    margin-top:5rem;
+    height: 100vh;
+    font-size: 1.8rem;
+    letter-spacing: 0.12rem;
+    line-height: 2.7rem;
+    &__heading{
+        text-align: center;
+        padding: 3rem;
+        font-size: 4rem;
+        color: rgb(82, 82, 82);
+    }
+    &__content{
+        margin-bottom: 2rem;
+    }
+}

@@ -46,8 +46,6 @@ a {
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-airport.jpg");
   background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   height: 90vh;
   position: relative; }
@@ -63,3 +61,23 @@ a {
     transition: transform 400ms; }
     .header__content-button:hover {
       transform: translateY(-0.5rem); }
+
+h2 {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 2rem; }
+
+.services {
+  color: #474747;
+  margin-top: 5rem;
+  height: 100vh;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.7rem; }
+  .services__heading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 4rem;
+    color: #525252; }
+  .services__content {
+    margin-bottom: 2rem; }
