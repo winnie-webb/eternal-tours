@@ -1,0 +1,34 @@
+{
+    "cards" : [
+    {
+        "id":1,
+        "price": "$300",
+        "name" : "Dunn's River Falls"
+    },
+    {
+        "id":2,
+        "price": "$300",
+        "name" : "Martha Brae River"
+    },
+    {
+        "id":3,
+        "price": "$300",
+        "name" : "Negril Beach"
+    },
+    {
+        "id":4,
+        "price": "$300",
+        "name" : "Blue Mountain"
+    },
+    {
+        "id":5,
+        "price": "$300",
+        "name" : "Rose Hall Great House"
+    },
+    {
+        "id":6,
+        "price": "$300",
+        "name" : "YS Falls"
+    }
+    ]
+}

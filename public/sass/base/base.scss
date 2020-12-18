@@ -20,5 +20,11 @@
       font-size: 2rem;
       padding: 2rem
   }
+  a{
+    color: $base-color;
+}
+#home-link{
+  margin-right: auto;
+}
   @import "./typography.scss";
 

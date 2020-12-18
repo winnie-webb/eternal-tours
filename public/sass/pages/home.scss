@@ -1,51 +1,14 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
 
-a{
-    color: $base-color;
-}
-.header {
-    background-image: linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)), url("../img/hero.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover; 
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    height: 90vh;
-    position: relative;
 
-    &__nav__links{
-        display: flex;
-        justify-content: center;
-        padding: 2rem;
+@import "../components/header.scss";
 
-        &__link{
-            margin: 1rem;
-            
-        }
-    }
+.header{
+    @include header-style(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)),url("../img/hero.jpg"));
+&__content-button{
+    @include button-default(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)));
 }
-#home-link{
-    margin-right: auto;
-}
-
-.header__content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    &__paragraph{
-        font-weight: 600;
-        font-size: 3rem;
-        letter-spacing: 1rem;
-        border: 4px solid;
-        padding: 1rem;
-    }
-    &-button{
-        @include button-default;
-        background:linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8));
-    }
-    
 }
 
 // Card Component

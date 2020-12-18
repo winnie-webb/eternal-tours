@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "compile:sass:home": "node-sass public/sass/pages/home.scss public/css/index.css -w",
-    "start" : "node app.js"
+    "compile:sass:transfer": "node-sass public/sass/pages/transfer.scss public/css/transfer.css -w",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "express": "^4.17.1",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "ejs-lint": "^1.1.0"
   }
 }
