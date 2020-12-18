@@ -41,11 +41,14 @@ a {
     font-size: 3rem;
     letter-spacing: 1rem;
     border: 4px solid;
-    padding: 1rem; }
+    padding: 1rem;
+    margin: 1rem; }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero-airport.jpg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   height: 90vh;
   position: relative; }

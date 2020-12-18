@@ -40,7 +40,7 @@
     }
     &__button{
         background-color: #74b9ff;
-        @include button-default;
+        @include button-default(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)));
         color:$base-color;
         display: block;
         margin-top: 7rem;
