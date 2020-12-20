@@ -17,9 +17,8 @@ h2{
     font-size: 2rem;
 }
 .services{
-    color: rgb(71, 71, 71);
+    color: rgb(82, 82, 82);
     margin-top:5rem;
-    height: 100vh;
     font-size: 1.8rem;
     letter-spacing: 0.12rem;
     line-height: 2.7rem;
@@ -31,5 +30,24 @@ h2{
     }
     &__content{
         margin-bottom: 2rem;
+    }
+}
+
+main{
+    color:rgb(82, 82, 82);
+}
+h3{
+    text-align: center;
+    font-size: 3rem;
+}
+.hotels{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem 4rem;
+
+    &__hotel {
+        padding: 1rem;
+        background-color: aqua;
     }
 }

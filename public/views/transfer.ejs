@@ -35,6 +35,29 @@
 
             </div>
         </section>
+        <section class="section-transfers">
+            <h3>Most Popular Hotels </h3>
+            <div class="hotels">
+                <% hotels.forEach(hotel => { %> 
+                    <p class="hotels__hotel"><%=hotel.name%> <%=hotel.largePrice%></p>
+              <%  }) %>
+            </div>
+ 
+        </section>
     </main>
+    <script>
+       async function getAllHotels() {
+        const hotelsJSON = await fetch("/hotels");
+        try{
+        const hotels = await hotelsJSON.json();
+        console.log(hotels)
+        }
+        catch(err){
+            console.log(err.message)
+        }
+    
+        }
+        getAllHotels();
+    </script>
 </body>
 </html>
