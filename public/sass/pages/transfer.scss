@@ -46,20 +46,37 @@ h3{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 7rem 4rem;
     &__hotel {
-        transition: height 400ms ease-out;
+        transition: height 350ms ease-out;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
         height: 5rem;
         cursor:pointer;
-        border-radius:1rem;
+        border-radius:.5rem;
         &__name{
             border-radius:.5rem;
             padding: 1rem;
             text-align: center;
             background-color: navy;
             color:#fff;
+            position: relative;
+
+            & span{
+                display: inline-block;
+                margin-left:2rem;
+            }
             
         }
     }
+}
+
+.right-arrow{
+    background-color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    clip-path: polygon(15% 14%, 15% 93%, 84% 57%);
+    left: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
 }
 .hotels__hotel__description{
 margin-top: 3rem;
