@@ -94,8 +94,19 @@ h3 {
 .hotels {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem 4rem; }
   .hotels__hotel {
     padding: 1rem;
-    background-color: aqua; }
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
+    background-color: #fff;
+    color: #000;
+    border-radius: 1rem; }
+    .hotels__hotel__name {
+      text-align: center; }
+
+.hotels__hotel__description {
+  height: 0;
+  opacity: 0; }
+  .hotels__hotel__description li {
+    padding: 1rem; }

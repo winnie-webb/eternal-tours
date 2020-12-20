@@ -43,11 +43,26 @@ h3{
 .hotels{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 1rem 4rem;
 
     &__hotel {
         padding: 1rem;
-        background-color: aqua;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
+        background-color: $base-color;
+        color:#000;
+        border-radius:1rem;
+        &__name{
+            text-align: center;
+            // background-color:;
+        }
     }
+}
+
+.hotels__hotel__description{
+    height:0;
+    opacity: 0;
+  & li {
+      padding: 1rem;
+  }
 }

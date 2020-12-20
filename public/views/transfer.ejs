@@ -38,26 +38,18 @@
         <section class="section-transfers">
             <h3>Most Popular Hotels </h3>
             <div class="hotels">
-                <% hotels.forEach(hotel => { %> 
-                    <p class="hotels__hotel"><%=hotel.name%> <%=hotel.largePrice%></p>
-              <%  }) %>
+               <% hotels.forEach(hotel => {%>
+                   <div class="hotels__hotel">
+                       <p class="hotels__hotel__name"><%= hotel.name %></p>
+                       <ul class="hotels__hotel__description">
+                           <li>$<%= hotel.smallPrice %> : 1- 4  passengers traveling as a private group  </li>
+                           <li>$<%= hotel.largePrice%>  : 5- 9 passengers traveling as a private group </li>
+                       </ul>
+                   </div>
+               <%})%>
             </div>
  
         </section>
     </main>
-    <script>
-       async function getAllHotels() {
-        const hotelsJSON = await fetch("/hotels");
-        try{
-        const hotels = await hotelsJSON.json();
-        console.log(hotels)
-        }
-        catch(err){
-            console.log(err.message)
-        }
-    
-        }
-        getAllHotels();
-    </script>
 </body>
 </html>

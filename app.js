@@ -15,10 +15,11 @@ app.get("/",(req,res) => {
    const cards = cardsObject.cards;
     res.render("index",{cards: cards})
 })
+
+app.get("/airport-transfer",(req,res) => {
 const hotelsJSON = fs.readFileSync(`${__dirname}/public/views/hotels.json`);
 const hotelsObject = JSON.parse(hotelsJSON);
 const hotels = hotelsObject.hotels;
-app.get("/airport-transfer",(req,res) => {
   res.render("transfer",{hotels:hotels});
 })
 app.get("/hotels",(req,res) => res.json(hotels))
