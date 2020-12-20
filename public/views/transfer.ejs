@@ -38,10 +38,10 @@
         <section class="section-transfers">
             <h3>Most Popular Hotels </h3>
             <div class="hotels">
-               <% hotels.forEach(hotel => {%>
-                   <div class="hotels__hotel">
+               <% hotels.forEach((hotel) => {%>
+                   <div class="hotels__hotel ">
                        <p class="hotels__hotel__name"><%= hotel.name %></p>
-                       <ul class="hotels__hotel__description">
+                       <ul class="hotels__hotel__description hotels-hide-description">
                            <li>$<%= hotel.smallPrice %> : 1- 4  passengers traveling as a private group  </li>
                            <li>$<%= hotel.largePrice%>  : 5- 9 passengers traveling as a private group </li>
                        </ul>
@@ -51,5 +51,16 @@
  
         </section>
     </main>
+    <script>
+        const hotelsContainer = document.querySelectorAll(".hotels__hotel");
+        const hotelsDescription = document.querySelectorAll(".hotels__hotel__description");
+        hotelsContainer.forEach((hotelContainer,index) => {
+            hotelContainer.addEventListener("click",() => {
+                hotelContainer.classList.toggle("hotels-height")
+                hotelsDescription[index].classList.toggle("hotels-hide-description");
+            })
+        })
+    </script>
+
 </body>
 </html>
