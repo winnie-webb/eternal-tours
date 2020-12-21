@@ -22,6 +22,7 @@
     justify-content: center;
     color: $base-color;
     font-size: 2rem;
+ 
 }
 @mixin header-style ($linear-gradient,$bg-img-url){
     background-image:$linear-gradient, $bg-img-url;

@@ -46,17 +46,22 @@
         <section class="section-reviews">
         
         </section>
-        <section class="section-cards">
-<div class="swiper-container">
 
+        <section class="section-cards">
+            <h2>Most Popular Tours</h2>
+<div class="swiper-container">
+<h2></h2>
     <div class="swiper-wrapper">
         <% cards.forEach(card => { %>
         <div class=" card swiper-slide">
-            <div class="card-top-<%= card.id %>">
-                <p>ONLY <%= card.price %> </p>
+            <div class=" card-top-<%= card.id %>">
+                <h3 class="card-top__heading"><%= card.name %></h3>
             </div>
             <div class="card-btm">
-            <h2><%= card.name %></h2>
+                <ul>
+                    <li>Only <%= card.price %></li>
+                </ul>
+            
                 <a class="card-btm__button" href="/book">Book</a>            
             </div>
             </div>
@@ -77,6 +82,8 @@
     <img src="../img/blue-hole.jpg" alt="Blue Hole Jamaica">
     <img src="../img/ys-falls.jpg" alt="YS Falls Jamaica">
     <img src="../img/rose-hall.jpg" alt="Rose Hall Jamaica">
+    <img src="../img/chukka-atv.jpg" alt="Chukka Atv">
+
 </div>
 </section>
 

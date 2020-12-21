@@ -93,13 +93,19 @@ a {
   .section-main-content {
     grid-template-columns: 1fr; } }
 
+.section-cards {
+  color: #8b8b8b; }
+
+h2 {
+  margin: 2rem;
+  text-align: center; }
+
 .card {
   width: 15rem;
   background-color: #fff;
   height: 90%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
   border-radius: 1rem;
-  color: lightgrey;
   font-size: 1.5rem;
   text-align: center; }
 
@@ -169,10 +175,32 @@ a {
   color: #fff;
   font-size: 2rem; }
 
+.card-top-6 {
+  height: 50%;
+  margin-bottom: auto;
+  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/ys-falls.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem; }
+
+.card-top-7 {
+  height: 50%;
+  margin-bottom: auto;
+  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/chukka-atv.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem; }
+
 .card-btm {
   padding-bottom: 3rem;
   margin-top: 2rem; }
-  .card-btm h2 {
+  .card-btm li {
     border-bottom: 1px solid lightgrey;
     padding: 1rem;
     font-weight: bold;
