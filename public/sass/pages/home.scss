@@ -14,16 +14,16 @@
 // Main Content Component
 
 .section-main-content{
-    display: flex;
-    height: 80vh;
-
+    display: grid;
+    margin-bottom: 5rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
 }
 .content{
     background-color: $base-color;
     color: black;
     box-shadow:$base-box-shadow;
-    height: 55%;
-    margin: 1.5rem;
+    height: min-content;
     padding: 2rem;
     border-radius: $base-border-radius;
     transform: scale(1);
@@ -38,6 +38,16 @@
     }
 }
 
+@media (max-width : 900px){
+    .section-main-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width : 550px){
+    .section-main-content{
+        grid-template-columns: 1fr;
+    }
+}
 
 // Card Component
 
@@ -90,12 +100,12 @@
     height: 80vh;
 }
 .gallery{
-    display:flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 2rem ;
     & img{
-        width:20%;
+        width: 100%;
         height: 20rem;
-        margin: 1rem;
         transition: transform 400ms;
         cursor: pointer;
         &:hover{
@@ -105,14 +115,15 @@
 }
  @media (max-width : 800px){
      .gallery{
-         flex-direction: column;
-         align-items: center;
-         & img {
-             width:65%;
-             height:23rem;
-         }
+      grid-template-columns: repeat(2,1fr);
      }
  }
+
+ @media (max-width : 400px){
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+}
 
  ::-webkit-scrollbar{
     width:15px;
