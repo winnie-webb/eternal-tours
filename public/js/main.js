@@ -36,4 +36,5 @@ const initSwiper = ( () => {
 
     
 })
+scrollFunctionality()
 initSwiper();

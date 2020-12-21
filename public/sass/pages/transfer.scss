@@ -11,6 +11,7 @@ color: rgb(167, 167, 167);
 }
 }
 
+// Services Component
 h2{
     margin-bottom: 3rem;
     font-weight: 600;
@@ -36,10 +37,12 @@ h2{
 main{
     color:rgb(82, 82, 82);
 }
+// Hotels Component
 h3{
     text-align: center;
     font-size: 3rem;
 }
+
 .hotels{
     margin-top: 2rem;
     display: grid;
@@ -97,4 +100,18 @@ padding: 1rem;
     .hotels{
         grid-template-columns:1fr;
     }
+}
+
+::-webkit-scrollbar{
+    width:15px;
+    border-radius:10px;
+}
+ ::-webkit-scrollbar-track{
+    width:100%;
+    background-color: rgba(0,0,0,0.8);
+
+}
+ ::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent, $base-color);
+    border-radius:10rem;
 }

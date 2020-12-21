@@ -11,13 +11,41 @@
 }
 }
 
+// Main Content Component
+
+.section-main-content{
+    display: flex;
+    height: 80vh;
+
+}
+.content{
+    background-color: $base-color;
+    color: black;
+    box-shadow:$base-box-shadow;
+    height: 55%;
+    margin: 1.5rem;
+    padding: 2rem;
+    border-radius: $base-border-radius;
+    transform: scale(1);
+    transition: transform 400ms;
+    &__heading{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &:hover{
+        transform: scale(1.04);
+        // box-shadow: ;
+    }
+}
+
+
 // Card Component
 
 .card{
     width: 15rem;
     background-color: $base-color;
     height:90%;
-    box-shadow: 0 0 0.5rem rgba(0,0,0,0.4);
+    box-shadow: $base-box-shadow;
     border-radius: 1rem;
     color:lightgrey;
     font-size: 1.5rem;
@@ -33,14 +61,15 @@
 .card-btm{
     padding-bottom: 3rem;
     margin-top: 2rem;
-    & p{
+    & h2{
         border-bottom: 1px solid lightgrey;
         padding: 1rem;
         font-weight: bold;
+        font-size: 1.7rem;
     }
     &__button{
         background-color: #74b9ff;
-        @include button-default(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)));
+        @include button-default($base-gradient);
         color:$base-color;
         display: block;
         margin-top: 7rem;
@@ -84,3 +113,18 @@
          }
      }
  }
+
+ ::-webkit-scrollbar{
+    width:15px;
+    border-radius:1rem;
+}
+ ::-webkit-scrollbar-track{
+    width:100%;
+    background-color: rgba(40,180,133,0.8);
+
+}
+ ::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent, rgb(9, 255, 0));
+    border-radius:10rem;
+}
+
