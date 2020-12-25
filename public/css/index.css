@@ -26,7 +26,7 @@ a {
 .header__nav__links {
   display: flex;
   justify-content: center;
-  padding: 2rem; }
+  padding: 1rem; }
   .header__nav__links__link {
     margin: 1rem; }
 
@@ -36,12 +36,10 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
-  .header__content__paragraph {
+  .header__content__heading {
     font-weight: 600;
     font-size: 3rem;
     letter-spacing: 1rem;
-    border: 4px solid;
-    padding: 1rem;
     margin: 1rem; }
 
 .header {
