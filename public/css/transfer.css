@@ -36,12 +36,10 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
-  .header__content__paragraph {
+  .header__content__heading {
     font-weight: 600;
     font-size: 3rem;
     letter-spacing: 1rem;
-    border: 4px solid;
-    padding: 1rem;
     margin: 1rem; }
 
 .header {
@@ -132,7 +130,7 @@ li {
   padding: 1rem; }
 
 .hotels-height {
-  height: 22rem; }
+  height: 27rem; }
 
 .hotels-hide-description {
   display: none; }
