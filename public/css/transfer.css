@@ -11,11 +11,13 @@ html {
   font-weight: 300;
   font-size: 62.5%;
   list-style: none;
-  color: #fff; }
+  color: #fff;
+  overflow-x: hidden; }
 
 body {
   font-size: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  overflow-x: hidden; }
 
 a {
   color: #fff; }
@@ -26,7 +28,8 @@ a {
 .header__nav__links {
   display: flex;
   justify-content: center;
-  padding: 2rem; }
+  padding: 2rem;
+  position: relative; }
   .header__nav__links__link {
     margin: 1rem; }
 
@@ -39,8 +42,39 @@ a {
   .header__content__heading {
     font-weight: 600;
     font-size: 3rem;
-    letter-spacing: 1rem;
-    margin: 1rem; }
+    letter-spacing: 1rem; }
+
+@media (max-width: 700px) {
+  .header {
+    height: 50vh;
+    clip-path: none; }
+    .header__nav__links {
+      display: block;
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      background-color: #fff;
+      color: #000;
+      z-index: 2;
+      height: min-content;
+      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+      border-radius: 0.4rem;
+      transform: translateX(30rem);
+      transition: transform 400ms; }
+      .header__nav__links__link a {
+        color: #666666; }
+  .navbar-toggle {
+    transform: translateX(0rem); }
+  .burger {
+    position: absolute;
+    padding: 0.5rem;
+    right: 2rem;
+    top: 1rem; }
+    .burger .burger__stroke {
+      width: 4rem;
+      height: 0.5rem;
+      background-color: #fff;
+      margin: 0.5rem; } }
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-airport.jpg");
