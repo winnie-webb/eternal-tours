@@ -22,6 +22,9 @@ body {
 a {
   color: #fff; }
 
+li {
+  padding: 1rem; }
+
 #home-link {
   margin-right: auto; }
 
