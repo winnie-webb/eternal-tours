@@ -41,11 +41,14 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  white-space: nowrap; }
   .header__content__heading {
     font-weight: 600;
     font-size: 3rem;
     letter-spacing: 1rem; }
+  .header__content__heading2 {
+    font-size: 1.8rem; }
 
 @media (max-width: 700px) {
   .header {
@@ -285,7 +288,12 @@ h2 {
 
 @media (max-width: 400px) {
   .gallery {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .header__content__heading {
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem; }
+  .header__content__heading2 {
+    font-size: 1.4rem; } }
 
 ::-webkit-scrollbar {
   width: 15px;

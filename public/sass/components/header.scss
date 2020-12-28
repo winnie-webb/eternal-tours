@@ -15,10 +15,14 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+        white-space: nowrap;
         &__heading{
             font-weight: 600;
             font-size: 3rem;
             letter-spacing: 1rem;
+        }
+        &__heading2{
+            font-size: 1.8rem;
         }
         
     }

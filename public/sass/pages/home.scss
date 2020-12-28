@@ -127,10 +127,19 @@
  }
 
  @media (max-width : 400px){
+    
     .gallery{
         grid-template-columns: 1fr;
     }
+    .header__content__heading{
+        letter-spacing: 0.5rem;
+        font-size: 2.5rem;
+        }
+        .header__content__heading2{
+            font-size: 1.4rem;
+        }
 }
+
 
  ::-webkit-scrollbar{
     width:15px;
