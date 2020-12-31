@@ -3,117 +3,137 @@
 
 @import "../components/header.scss";
 
-.header{
-    @include header-style(linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../img/hero-airport.jpg"));
-&__content-button{
-color: rgb(167, 167, 167);
-@include button-default(linear-gradient(rgb(255,255,255),rgb(255,255,255)));
-}
+.header {
+  @include header-style(
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/hero-airport.jpg")
+  );
+  &__content-button {
+    color: rgb(167, 167, 167);
+    @include button-default(
+      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
+    );
+  }
 }
 
 // Services Component
-h2{
-    margin-bottom: 3rem;
-    font-weight: 600;
-    font-size: 2rem;
+h2 {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
-.services{
+.services {
+  color: rgb(82, 82, 82);
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.12rem;
+  line-height: 2.7rem;
+  &__heading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 4rem;
     color: rgb(82, 82, 82);
-    margin-top:5rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.12rem;
-    line-height: 2.7rem;
-    &__heading{
-        text-align: center;
-        padding: 3rem;
-        font-size: 4rem;
-        color: rgb(82, 82, 82);
-    }
-    &__content{
-        margin-bottom: 2rem;
-    }
+  }
+  &__content {
+    margin-bottom: 2rem;
+  }
 }
 
-main{
-    color:rgb(82, 82, 82);
+main {
+  color: rgb(82, 82, 82);
 }
 // Hotels Component
-h3{
-    text-align: center;
-    font-size: 3rem;
+h3 {
+  text-align: center;
+  font-size: 3rem;
 }
 
-.hotels{
-    margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 7rem 4rem;
-    &__hotel {
-        transition: height 350ms ease-out;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
-        height: 5rem;
-        cursor:pointer;
-        border-radius:.5rem;
-        &__name{
-            border-radius:.5rem;
-            padding: 1rem;
-            text-align: center;
-            background-color: navy;
-            color:#fff;
-            position: relative;
-            
-        }
+.hotels {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7rem 4rem;
+  &__hotel {
+    transition: height 350ms ease-out;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
+    height: 5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    &__name {
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      background-color: navy;
+      color: #fff;
+      position: relative;
     }
+  }
 }
-span{
-    display: inline-block;
-}
-
-.right-arrow{
-    background-color: black;
-    width: 2.5rem;
-    height: 2.5rem;
-    clip-path: polygon(15% 14%, 15% 93%, 84% 57%);
-}
-.down-arrow{
-   clip-path: polygon(10% 21%, 48% 89%, 94% 21%) !important;
-}
-.hotels__hotel__description{
-margin-top: 1rem;
-color: #000;
-font-size: 1.7rem;
-padding: 1rem;
+span {
+  display: inline-block;
 }
 
-
-.hotels-height{
-    height:27rem;
+.right-arrow {
+  background-color: black;
+  width: 2.5rem;
+  height: 2.5rem;
+  clip-path: polygon(15% 14%, 15% 93%, 84% 57%);
 }
-.hotels-hide-description{
-    display: none;
+.down-arrow {
+  clip-path: polygon(10% 21%, 48% 89%, 94% 21%) !important;
 }
-
-@media (max-width : 1000px){
-    .hotels{
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (max-width: 670px){
-    .hotels{
-        grid-template-columns:1fr;
-    }
+.hotels__hotel__description {
+  margin-top: 1rem;
+  color: #000;
+  font-size: 1.7rem;
+  padding: 1rem;
 }
 
-::-webkit-scrollbar{
-    width:15px;
-    border-radius:10px;
+.hotels-height {
+  height: 27rem;
 }
- ::-webkit-scrollbar-track{
-    width:100%;
-    background-color: rgba(0,0,0,0.8);
+.hotels-hide-description {
+  display: none;
+}
 
+@media (max-width: 1000px) {
+  .hotels {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
- ::-webkit-scrollbar-thumb{
-    background:linear-gradient(transparent, $base-color);
-    border-radius:10rem;
+@media (max-width: 670px) {
+  .hotels {
+    grid-template-columns: 1fr;
+  }
+  .header__content__heading {
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__content__heading {
+    letter-spacing: 0.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.3rem;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, $base-color);
+  border-radius: 10rem;
 }

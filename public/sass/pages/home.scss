@@ -1,148 +1,180 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
 
-
 @import "../components/header.scss";
 
-.header{
-    @include header-style(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)),url("../img/hero.jpg"));
-&__content-button{
-    @include button-default(linear-gradient(to right bottom,rgba(126,213,111,0.7), rgba(40,180,133,0.8)));
-}
+.header {
+  @include header-style(
+    linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.7),
+      rgba(40, 180, 133, 0.8)
+    ),
+    url("../img/hero.jpg")
+  );
+  &__content-button {
+    @include button-default(
+      linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.7),
+        rgba(40, 180, 133, 0.8)
+      )
+    );
+  }
 }
 
 // Main Content Component
 
-.section-main-content{
-    display: grid;
-    margin-bottom: 5rem;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 2rem;
+.section-main-content {
+  display: grid;
+  margin-bottom: 5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
 }
-.content{
-    background-color: $base-color;
-    color: black;
-    box-shadow:$base-box-shadow;
-    height: min-content;
-    padding: 2rem;
-    border-radius: $base-border-radius;
-    transform: scale(1);
-    transition: transform 400ms;
-    &__heading{
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-    &:hover{
-        transform: scale(1.04);
-        // box-shadow: ;
-    }
+.content {
+  background-color: $base-color;
+  color: black;
+  box-shadow: $base-box-shadow;
+  height: min-content;
+  padding: 2rem;
+  border-radius: $base-border-radius;
+  transform: scale(1);
+  transition: transform 400ms;
+  &__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &:hover {
+    transform: scale(1.04);
+    // box-shadow: ;
+  }
 }
 
-@media (max-width : 900px){
-    .section-main-content{
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 900px) {
+  .section-main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width : 550px){
-    .section-main-content{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 550px) {
+  .section-main-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Card Component
-.section-cards{
-    color:rgb(139, 139, 139);
+.section-cards {
+  color: rgb(139, 139, 139);
 }
- h2 {
-    margin: 2rem;
-    text-align: center;
+h2 {
+  margin: 2rem;
+  text-align: center;
 }
-.card{
-    width: 15rem;
-    background-color: $base-color;
-    height:90%;
-    box-shadow: $base-box-shadow;
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
+.card {
+  width: 15rem;
+  background-color: $base-color;
+  height: 90%;
+  box-shadow: $base-box-shadow;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
-.card-top-1{@include card-top-style("../img/dunns-river.jpg");}
-.card-top-2{@include card-top-style("../img/martha-brae.jpg");}
-.card-top-3{@include card-top-style("../img/negril.jpg");}
-.card-top-4{@include card-top-style("../img/blue-mountain.jpg");}
-.card-top-5{@include card-top-style("../img/rose-hall.jpg");}
-.card-top-6{@include card-top-style("../img/ys-falls.jpg");}
-.card-top-6{@include card-top-style("../img/ys-falls.jpg");}
-.card-top-7{@include card-top-style("../img/chukka-atv.jpg");}
+.card-top-1 {
+  @include card-top-style("../img/dunns-river.jpg");
+}
+.card-top-2 {
+  @include card-top-style("../img/martha-brae.jpg");
+}
+.card-top-3 {
+  @include card-top-style("../img/negril.jpg");
+}
+.card-top-4 {
+  @include card-top-style("../img/blue-mountain.jpg");
+}
+.card-top-5 {
+  @include card-top-style("../img/rose-hall.jpg");
+}
+.card-top-6 {
+  @include card-top-style("../img/ys-falls.jpg");
+}
+.card-top-6 {
+  @include card-top-style("../img/ys-falls.jpg");
+}
+.card-top-7 {
+  @include card-top-style("../img/chukka-atv.jpg");
+}
 
-.card-btm{
-    padding-bottom: 3rem;
-    margin-top: 2rem;
-    & li{
-        border-bottom: 1px solid lightgrey;
-        padding: 1rem;
-        font-weight: bold;
-        font-size: 1.7rem;
-    }
-    &__button{
-        background-color: #74b9ff;
-        @include button-default($base-gradient);
-        color:$base-color;
-        display: block;
-        margin-top: 7rem;
-        
-    }
-}
-.card-top__img{
-    width: 90%;
+.card-btm {
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  & li {
+    border-bottom: 1px solid lightgrey;
     padding: 1rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+  }
+  &__button {
+    background-color: #74b9ff;
+    @include button-default($base-gradient);
+    color: $base-color;
+    display: block;
+    margin-top: 7rem;
+  }
 }
-.swiper-container{
-    width: 85%;
-    height: 60rem;
+.card-top__img {
+  width: 90%;
+  padding: 1rem;
+}
+.swiper-container {
+  width: 85%;
+  height: 60rem;
 }
 
 //  Gallery Component
-.section-gallery{
-    height: 80vh;
+.section-gallery {
+  height: 80vh;
 }
-.gallery{
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    grid-gap: 2rem ;
-    & img{
-        width: 100%;
-        height: 20rem;
-        transition: transform 400ms;
-        cursor: pointer;
-        &:hover{
-            transform: scale(1.1);
-        }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  & img {
+    width: 100%;
+    height: 20rem;
+    transition: transform 400ms;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
     }
+  }
 }
- @media (max-width : 800px){
-     .gallery{
-      grid-template-columns: repeat(2,1fr);
-     }
- }
-
- @media (max-width : 400px){
-    .gallery{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
- ::-webkit-scrollbar{
-    width:15px;
-    border-radius:1rem;
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .header__content__heading {
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.4rem;
+  }
 }
- ::-webkit-scrollbar-track{
-    width:100%;
-    background-color: rgba(40,180,133,0.8);
 
+::-webkit-scrollbar {
+  width: 15px;
+  border-radius: 1rem;
 }
- ::-webkit-scrollbar-thumb{
-    background:linear-gradient(transparent, rgb(9, 255, 0));
-    border-radius:10rem;
+::-webkit-scrollbar-track {
+  width: 100%;
+  background-color: rgba(40, 180, 133, 0.8);
 }
-
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, rgb(9, 255, 0));
+  border-radius: 10rem;
+}
