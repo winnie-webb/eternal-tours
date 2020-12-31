@@ -52,8 +52,8 @@
         },
         {
             "name":"Jamaica Inn",
-            "smallPrice": "98",
-            "largePrice": "21"
+            "smallPrice": 98,
+            "largePrice": 21
         },
         {
             "name":"Ocean Coral Spring",
