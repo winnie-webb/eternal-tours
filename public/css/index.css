@@ -80,6 +80,9 @@ li {
       background-color: #fff;
       margin: 0.5rem; } }
 
+.header__content__heading2 {
+  font-size: 1.8rem; }
+
 .header {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: center;
