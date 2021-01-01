@@ -36,4 +36,4 @@ app.get("*",(req,res) => res.send(`<h1 style="text-align:center; font-family : s
 
 app.listen(PORT,() => console.log("Server has started"))
 
-//  Setup Nodemailer 
+//  Setup Paypal API

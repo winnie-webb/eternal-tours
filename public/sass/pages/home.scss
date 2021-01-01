@@ -4,7 +4,7 @@
 @import "../components/header.scss";
 
 .header {
-margin-bottom:10rem;
+  margin-bottom: 10rem;
   @include header-style(
     linear-gradient(
       to right bottom,
@@ -23,24 +23,39 @@ margin-bottom:10rem;
     );
   }
 }
+@media (max-width: 420px) {
+  .header__content__heading {
+    font-size: 2rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 320px) {
+  .header__content__heading {
+    font-size: 1.5rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.2rem;
+  }
+}
 // Video Component
-.section-bgvideo{
-  margin:3rem;
-  text-align:center;
+.section-bgvideo {
+  margin: 3rem;
+  text-align: center;
+}
+.video-wrapper {
+  height: 30rem;
+  overflow: hidden;
+  & video {
+    border: none;
+    outline: none;
   }
-  .video-wrapper {
-  height:30rem;
-  overflow:hidden;
- & video {
-  border:none;
-  outline:none;
-  }
-  }
-  
+}
 
 @media (max-width: 550px) {
-  .video-wrapper{
-  height:20rem;
+  .video-wrapper {
+    height: 20rem;
   }
 }
 
@@ -148,26 +163,6 @@ h2 {
   height: 60rem;
 }
 
-<<<<<<< HEAD
- @media (max-width : 400px){
-    
-    .gallery{
-        grid-template-columns: 1fr;
-    }
-    .header__content__heading{
-        letter-spacing: 0.5rem;
-        font-size: 2.5rem;
-        }
-        .header__content__heading2{
-            font-size: 1.4rem;
-        }
-}
-
-
- ::-webkit-scrollbar{
-    width:15px;
-    border-radius:1rem;
-=======
 //  Gallery Component
 .section-gallery {
   height: 80vh;
@@ -196,14 +191,6 @@ h2 {
   .gallery {
     grid-template-columns: 1fr;
   }
-  .header__content__heading {
-    letter-spacing: 0.5rem;
-    font-size: 2.5rem;
-  }
-  .header__content__heading2 {
-    font-size: 1.4rem;
-  }
->>>>>>> 039b7f5c9bcc35d833a2eed38db73fe7368ebf65
 }
 
 ::-webkit-scrollbar {

@@ -46,11 +46,12 @@ li {
   .header__content__heading {
     font-weight: 600;
     font-size: 3rem;
-    letter-spacing: 1rem; }
+    letter-spacing: 0.2rem;
+    margin: 2rem; }
   .header__content__heading2 {
     font-size: 1.8rem; }
 
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .header {
     height: 50vh;
     clip-path: none !important; }
@@ -82,9 +83,6 @@ li {
       background-color: #fff;
       margin: 0.5rem; } }
 
-.header__content__heading2 {
-  font-size: 1.8rem; }
-
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-airport.jpg");
   background-position: center;
@@ -95,21 +93,37 @@ li {
   position: relative; }
   .header__content-button {
     color: #a7a7a7;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.4rem;
     margin: 2rem auto;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
     background: linear-gradient(white, white);
     cursor: pointer;
-    width: 60%;
+    width: 22rem;
     transition: transform 400ms; }
     .header__content-button:hover {
       transform: translateY(-0.5rem); }
 
-h2 {
-  margin-bottom: 3rem;
-  font-weight: 600;
-  font-size: 2rem; }
+@media (max-width: 580px) {
+  .header__content__heading {
+    font-size: 2rem;
+    letter-spacing: 0rem; }
+  .header__content__heading2 {
+    font-size: 1.5rem; } }
+
+@media (max-width: 400px) {
+  .header__content__heading {
+    font-size: 1.45rem;
+    letter-spacing: 0.1rem; }
+  .header__content__heading2 {
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem; } }
+
+@media (max-width: 320px) {
+  .header__content__heading {
+    font-size: 1.3rem; }
+  .header__content__heading2 {
+    font-size: 1rem; } }
 
 .services {
   color: #000;
@@ -117,16 +131,24 @@ h2 {
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
   line-height: 2.7rem; }
+  .services h2 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+    font-size: 2rem; }
   .services__heading {
     text-align: center;
     padding: 3rem;
     font-size: 4rem;
-    color: #525252; }
+    color: #525252;
+    white-space: nowrap; }
   .services__content {
     margin-bottom: 2rem; }
 
-main {
-  color: #525252; }
+@media (max-width: 400px) {
+  .services__heading {
+    font-size: 1.8rem !important; }
+  .services h2 {
+    font-size: 1.5rem; } }
 
 h3 {
   text-align: center;
@@ -151,6 +173,15 @@ h3 {
       color: #fff;
       position: relative; }
 
+.hotels__hotel__payment-btn {
+  background-color: #08fd08;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  text-align: center;
+  margin: 1rem; }
+
 span {
   display: inline-block; }
 
@@ -170,7 +201,7 @@ span {
   padding: 1rem; }
 
 .hotels-height {
-  height: 27rem; }
+  height: 32rem; }
 
 .hotels-hide-description {
   display: none; }
@@ -181,20 +212,11 @@ span {
 
 @media (max-width: 670px) {
   .hotels {
-    grid-template-columns: 1fr; }
-  .header__content__heading {
-    letter-spacing: 0.5rem;
-    font-size: 2rem; }
-  .header__content__heading2 {
-    font-size: 1.5rem; } }
+    grid-template-columns: 1fr; } }
 
-@media (max-width: 400px) {
-  .header__content__heading {
-    letter-spacing: 0.5rem;
-    font-size: 1.7rem;
-    letter-spacing: 0.3rem; }
-  .header__content__heading2 {
-    font-size: 1.3rem; } }
+@media (max-width: 380px) {
+  .hotels-height {
+    height: min-content; } }
 
 ::-webkit-scrollbar {
   width: 15px;

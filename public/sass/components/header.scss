@@ -1,71 +1,69 @@
 .header {
-    &__nav__links{
-        display: flex;
-        justify-content: center;
-        padding: 2rem;
-        position: relative;
+  &__nav__links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
 
-        &__link{
-            margin: 1rem;
-        }
+    &__link {
+      margin: 1rem;
     }
-&__content{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        white-space: nowrap;
-        &__heading{
-            font-weight: 600;
-            font-size: 3rem;
-            letter-spacing: 1rem;
-        }
-        &__heading2{
-            font-size: 1.8rem;
-        }
-        
+  }
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
+    &__heading {
+      font-weight: 600;
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+      margin: 2rem;
     }
+    &__heading2 {
+      font-size: 1.8rem;
+    }
+  }
 }
 
-@media (max-width : 700px) {
-    .header{
-        height: 50vh;
-        clip-path: none !important;
-    &__nav__links{
-        display: block;
-        position: absolute;
-        top:5rem;
-        right: 1rem;
-        background-color: #fff;
-        color:#000;
-        z-index:2;
-        height: min-content;
-        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
-        border-radius: 0.4rem;
-        transform: translateX(30rem);
-        transition: transform 400ms;
-        &__link a{
-            color: rgb(102, 102, 102);
-        }
+@media (max-width: 770px) {
+  .header {
+    height: 50vh;
+    clip-path: none !important;
+    &__nav__links {
+      display: block;
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      background-color: #fff;
+      color: #000;
+      z-index: 2;
+      height: min-content;
+      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+      border-radius: 0.4rem;
+      transform: translateX(30rem);
+      transition: transform 400ms;
+      &__link a {
+        color: rgb(102, 102, 102);
+      }
     }
-
-}
-.navbar-toggle {
+  }
+  .navbar-toggle {
     transform: translateX(0rem);
-}
+  }
 
-.burger{
+  .burger {
     position: absolute;
     padding: 0.5rem;
     right: 2rem;
-    top:1rem;
-    & .burger__stroke{
-        width: 4rem;
-        height:0.5rem;
-        background-color: #fff;
-        margin: 0.5rem;
+    top: 1rem;
+    & .burger__stroke {
+      width: 4rem;
+      height: 0.5rem;
+      background-color: #fff;
+      margin: 0.5rem;
     }
-
-}
+  }
 }
