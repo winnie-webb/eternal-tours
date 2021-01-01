@@ -82,6 +82,9 @@ li {
       background-color: #fff;
       margin: 0.5rem; } }
 
+.header__content__heading2 {
+  font-size: 1.8rem; }
+
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/hero-airport.jpg");
   background-position: center;
@@ -109,7 +112,7 @@ h2 {
   font-size: 2rem; }
 
 .services {
-  color: #525252;
+  color: #000;
   margin-top: 5rem;
   font-size: 1.8rem;
   letter-spacing: 0.12rem;
@@ -139,9 +142,9 @@ h3 {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
     height: 5rem;
     cursor: pointer;
-    border-radius: .5rem; }
+    border-radius: 0.5rem; }
     .hotels__hotel__name {
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       padding: 1rem;
       text-align: center;
       background-color: navy;

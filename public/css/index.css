@@ -82,7 +82,11 @@ li {
       background-color: #fff;
       margin: 0.5rem; } }
 
+.header__content__heading2 {
+  font-size: 1.8rem; }
+
 .header {
+  margin-bottom: 10rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
@@ -102,6 +106,21 @@ li {
     .header__content-button:hover {
       transform: translateY(-0.5rem); }
 
+.section-bgvideo {
+  margin: 3rem;
+  text-align: center; }
+
+.video-wrapper {
+  height: 30rem;
+  overflow: hidden; }
+  .video-wrapper video {
+    border: none;
+    outline: none; }
+
+@media (max-width: 550px) {
+  .video-wrapper {
+    height: 20rem; } }
+
 .section-main-content {
   display: grid;
   margin-bottom: 5rem;
@@ -112,7 +131,6 @@ li {
   background-color: #fff;
   color: black;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
-  height: min-content;
   padding: 2rem;
   border-radius: 6px;
   transform: scale(1);

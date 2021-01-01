@@ -2,181 +2,139 @@
     "hotels":[
         {
             "name":"Breathless Resort",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Excellence Oyster Bay",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 48,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 11
         },
         {
             "name":"Holiday Inn",
-            "smallGroupOfPassengers": "1 - 4",
-            "smallPrice": "24",
-            "largeGroupOfPassengers": "1 - 5",
+            "smallPrice": 24,
             "largePrice": 6
         },
         {
             "name":"Halfmoon Rose Hall",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Iberostar Grand",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Iberostar Suites",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Riu Negril",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Riu Montego Bay",
-            "smallGroupOfPassengers": "1 - 4",
-            "smallPrice": "18",
-            "largeGroupOfPassengers": "1 - 5",
-            "largePrice": "4"
+            "smallPrice": 18,
+            "largePrice": 4
         },
         {
             "name":"S Hotel",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": "14",
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": "3"
         },
         {
             "name":"Grand Palladium Jamaica",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 48,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 11
         },
         {
             "name":"Jamaica Inn",
-            "smallGroupOfPassengers": "1 - 4",
-            "smallPrice": "98",
-            "largeGroupOfPassengers": "1 - 5",
-            "largePrice": "21"
+            "smallPrice": 98,
+            "largePrice": 21
         },
         {
             "name":"Ocean Coral Spring",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 48,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 11
         },
         {
             "name":"Bahia Principe Grand",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Hilton Rose Hall",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Royalton Blue Waters",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 48,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 11
         },  
         {
             "name":"Royalton White Sands",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 48,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 11
         },  
         {
             "name":"Royalton Negril",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Secrets St.James",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Secrets Wild Orchid",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         }, 
         {
             "name":"Sunset at the Palms",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Hyatt Rose Hall",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Jewel Grande",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 29,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 6
         },
         {
             "name":"Jewel Runaway Bay",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Jewel Paradise",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 73,
-            "largeGroupOfPassengers": "1 - 5",
             "largePrice": 17
         },
         {
             "name":"Riu Ocho Rios",
-            "smallGroupOfPassengers": "1 - 4",
             "smallPrice": 84,
-            "largeGroupOfPassengers": "1 - 5",
+            "largePrice": 19
+        },
+        {
+            "name":"Sandals Montego Bay",
+            "smallPrice": 29,
+            "largePrice": 6
+        },
+        {
+            "name":"Moonpalace Ocho Rios",
+            "smallPrice": 84,
             "largePrice": 19
         }
         
-        
-
     ]
 }

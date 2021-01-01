@@ -7,6 +7,10 @@
     <title>Eternal Tours And Airport Transfers</title>
     <script src="../js/transfer.js" defer></script>
     <script src="../js/header.js" defer></script>
+    <style>
+        .services__content{line-height: 3.5rem;}
+        h2{text-align: center;}
+    </style>
 </head>
 <body>
     <header class="header">
@@ -27,7 +31,7 @@
     <main>
         <section class="section-services">
             <div class="services">
-                    <h1 class="services__heading">Our Shuttle Services</h1>
+                    <h1 style="font-size: 3rem;" class="services__heading">Our Shuttle Services</h1>
                     <h2> There are numerous shuttle services to choose from, so why use Eternal Tours and Airport Transfers.</h2>
                 <p class="services__content" >
                    We pride ourselves in having safe, reliable and enjoyable 
@@ -50,14 +54,16 @@
                            <span class="right-arrow"></span>
                         <span><%= hotel.name %></span>
                        </div>
-                       <ul class="hotels__hotel__description hotels-hide-description">
-                           <li>$<%= hotel.smallPrice %> : 1- 4  passengers traveling as a private group  </li>
-                           <li>$<%= hotel.largePrice%>  : 5- 9 passengers traveling as a private group </li>
-                            <li>Duration (one-way) : 1hr</li>
+                       <ul style="font-family: 'Helvitica', sans-serif;" class="hotels__hotel__description hotels-hide-description">
+                           <li>$<%= hotel.smallPrice %> USD : 1- 4  passengers traveling as a private group  </li>
+                           <li>$<%= hotel.largePrice%> USD  : 5- 9 passengers traveling as a private group </li>
+                           <li>Groups of 10 or more please contact us for info on the group rate </li>
                         </ul>
                    </div>
                <%})%>
             </div>
+            <p style="margin:4rem; text-align: center;font-weight: bold;">Please note that major currencies accepted : £, €, CA$ & USD *</p>
+
  
         </section>
     </main>
