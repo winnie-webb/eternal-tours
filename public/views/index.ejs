@@ -68,15 +68,15 @@
     <div class="swiper-wrapper">
         <% cards.forEach(card => { %>
         <div class=" card swiper-slide">
+            <a href="/book">
             <div class=" card-top-<%= card.id %>">
                 <h3 class="card-top__heading"><%= card.name %></h3>
-            </div>
+            </div> </a>
             <div class="card-btm">
-                <ul>
-                    <li>Only <%= card.price %></li>
-                </ul>
-            
-                <a class="card-btm__button" href="/book">Book</a>            
+                <p><%= card.type %></p>
+                <a class="card-btm__button" href="/book">Book</a>     
+                <a class="card-btm__link" target="_blank" href="https://www.planetware.com/tourist-attractions/jamaica-jam.htm">Know More ?</a>
+       
             </div>
             </div>
        <% })%>

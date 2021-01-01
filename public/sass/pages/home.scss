@@ -5,22 +5,10 @@
 
 .header {
   margin-bottom: 10rem;
-  @include header-style(
-    linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.7),
-      rgba(40, 180, 133, 0.8)
-    ),
-    url("../img/hero.jpg")
-  );
+  @include header-style($base-gradient, url("../img/hero.jpg"));
+
   &__content-button {
-    @include button-default(
-      linear-gradient(
-        to right bottom,
-        rgba(126, 213, 111, 0.7),
-        rgba(40, 180, 133, 0.8)
-      )
-    );
+    @include button-default($base-gradient);
   }
 }
 @media (max-width: 420px) {
@@ -110,7 +98,7 @@ h2 {
   box-shadow: $base-box-shadow;
   border-radius: 1rem;
   font-size: 1.5rem;
-  text-align: center;
+  position: relative;
 }
 .card-top-1 {
   @include card-top-style("../img/dunns-river.jpg");
@@ -140,18 +128,31 @@ h2 {
 .card-btm {
   padding-bottom: 3rem;
   margin-top: 2rem;
-  & li {
-    border-bottom: 1px solid lightgrey;
-    padding: 1rem;
+  & p:first-child {
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+  }
+  &__link {
+    display: block;
+    text-align: center;
+    color: rgb(172, 172, 172);
+    @include centerButton;
+    bottom: 2rem;
   }
   &__button {
-    background-color: #74b9ff;
     @include button-default($base-gradient);
+    @include centerButton;
     color: $base-color;
     display: block;
-    margin-top: 7rem;
+    bottom: 7rem;
+    text-align: center;
+    // The hover effect is overided because the transforms got messed up because of position absolute
+    &:hover {
+      transform: translate(-50%, -0.5rem);
+    }
   }
 }
 .card-top__img {

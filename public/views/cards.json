@@ -3,37 +3,45 @@
     {
         "id":1,
         "price": "$300",
-        "name" : "Dunn's River Falls"
+        "name" : "Dunn's River Falls",
+        "type" : "Adventurous & Fun"
     },
     {
         "id":2,
         "price": "$300",
-        "name" : "Martha Brae River"
+        "name" : "Martha Brae River",
+        "type" : "Relaxing & Adventurous"
     },
     {
         "id":3,
         "price": "$300",
-        "name" : "Negril Beach"
+        "name" : "Negril Beach",
+        "type": "Relaxing & Fun"
     },
     {
         "id":4,
         "price": "$300",
-        "name" : "Blue Mountain"
+        "name" : "Blue Mountain",
+        "type" : "Adventurous & Relaxing"
     },
     {
         "id":5,
         "price": "$300",
-        "name" : "Rose Hall Great House"
+        "name" : "Rose Hall Great House",
+        "type":"Fun & Interactive"
     },
     {
         "id":6,
         "price": "$300",
-        "name" : "YS Falls"
+        "name" : "YS Falls",
+        "type" : "Relaxing & Fun"
+
     },
     {
         "id":7,
         "price": "$300",
-        "name" : "Chukka ATV"
+        "name" : "Chukka ATV",
+        "type" : "Adventurous & Fun"
     }
     ]
 }
