@@ -67,7 +67,7 @@
 }
 @media (max-width: 400px) {
   .services__heading {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
   .services h2 {
     font-size: 1.5rem;
@@ -77,7 +77,10 @@
 .section-gallery {
   margin-top: 8rem;
   height: min-content;
-  color: #000;
+  & h3 {
+    margin: 4rem;
+    color: #40739e;
+  }
 }
 .gallery {
   display: grid;
@@ -119,11 +122,11 @@
     border-radius: 0.5rem;
   }
   & .card-pricings-btn {
-    background-color: #718093;
+    background-color: $secondary-btn-background-transfers;
   }
   & .card-book-btn {
     font-size: 1.8rem;
-    background-color: #0097e6;
+    background-color: $primary-btn-background-transfers;
     box-shadow: $base-box-shadow;
   }
 }
@@ -146,7 +149,7 @@ h3 {
 }
 
 .hotels {
-  margin-top: 2rem;
+  margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 7rem 4rem;
@@ -154,26 +157,38 @@ h3 {
     transition: height 350ms ease-out;
     box-shadow: $base-box-shadow;
     height: 5rem;
-    cursor: pointer;
     border-radius: 0.5rem;
     &__name {
       border-radius: 0.5rem;
       padding: 1rem;
       text-align: center;
-      background-color: #487eb0;
+      background-color: $hotels-content-background;
       color: #fff;
       position: relative;
+      cursor: pointer;
     }
   }
 }
 .hotels__hotel__payment-btn {
-  background-color: #0097e6;
+  background-color: $primary-btn-background-transfers;
   padding: 1rem;
   color: $base-color;
   border-radius: 1rem;
   box-shadow: $base-box-shadow;
   text-align: center;
   margin: 1rem;
+  animation: shake 200ms 3 ease-in 1s;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(-1rem);
+  }
+  50% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
 }
 span {
   display: inline-block;

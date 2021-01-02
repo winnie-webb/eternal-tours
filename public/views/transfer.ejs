@@ -31,8 +31,8 @@
     <main>
         
         <section class="section-gallery">
+            <h3>Popular Hotels </h3>
             <div class="gallery">
-
                 <figure class="gallery__card">
                 <img src="../img/grand-palladium.jpg" alt="Grand Palladium Hotel">
                 <h2>Grand Palladium</h2>
@@ -107,10 +107,9 @@
             </div>
         </section>
         <section class="section-transfers">
-            <h3>Popular Hotels </h3>
             <div class="hotels">
                <% hotels.forEach((hotel) => {%>
-                   <div class="hotels__hotel ">
+                   <div class="hotels__hotel">
                        <div class="hotels__hotel__name">
                            <span class="right-arrow"></span>
                         <span><%= hotel.name %></span>
@@ -119,7 +118,7 @@
                            <li><b>$<%= hotel.smallPrice %> USD</b> : 1- 4  passengers traveling as a private group  </li>
                            <li><b>$<%= hotel.largePrice%> USD (per person)</b>  : 5- 9 passengers traveling as a private group </li>
                            <li>Groups of 10 or more please contact us for info on the group rate </li>
-                           <li class="hotels__hotel__payment-btn">Book</li>
+                           <a target="_blank" href="/book"><li class="hotels__hotel__payment-btn">Book</li></a>
                         </ul>
                    </div>
                <%})%>
