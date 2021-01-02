@@ -29,23 +29,7 @@
         </div>
     </header>
     <main>
-        <section class="section-services">
-            <div class="services">
-                    <h1 style="font-size: 3rem;" class="services__heading">Our Shuttle Services</h1>
-                    <h2> There are numerous shuttle services to choose from, so why use Eternal Tours and Airport Transfers.</h2>
-                <p class="services__content" >
-                   We pride ourselves in having safe, reliable and enjoyable 
-                travel . We value your safety and ensure that you are always comfortable.
-                When you arrive there will be no hassle. We guarantee a smooth transition from airport to hotel.                
-               We decided that our passengers should not wait for shuttles but have the shuttles wait for them.
-               We also support island-wide airport transfers so now you can visit any hotel you would like
-            </p>
-                <p class="services__content">As a customer you would think for a service like this it would be for a hefty price
-                    but for us , this is just not the case. We offer high quality for a low price. When you have experienced Eternal Tours and Airport Transfers you will be <b>Eternally pleased.</b>
-                </p>
-
-            </div>
-        </section>
+        
         <section class="section-gallery">
             <div class="gallery">
 
@@ -131,9 +115,9 @@
                            <span class="right-arrow"></span>
                         <span><%= hotel.name %></span>
                        </div>
-                       <ul style="font-family: 'Helvitica', sans-serif;" class="hotels__hotel__description hotels-hide-description">
-                           <li>$<%= hotel.smallPrice %> USD : 1- 4  passengers traveling as a private group  </li>
-                           <li>$<%= hotel.largePrice%> USD <b>(per person)</b>  : 5- 9 passengers traveling as a private group </li>
+                       <ul class="hotels__hotel__description hotels-hide-description">
+                           <li><b>$<%= hotel.smallPrice %> USD</b> : 1- 4  passengers traveling as a private group  </li>
+                           <li><b>$<%= hotel.largePrice%> USD (per person)</b>  : 5- 9 passengers traveling as a private group </li>
                            <li>Groups of 10 or more please contact us for info on the group rate </li>
                            <li class="hotels__hotel__payment-btn">Book</li>
                         </ul>
@@ -143,6 +127,23 @@
             <p style="margin:4rem; text-align: center;font-weight: bold;">Please note that major currencies accepted : £, €, CA$ & USD *</p>
 
  
+        </section>
+        <section class="section-services">
+            <div class="services">
+                    <h1 style="font-size: 3rem;" class="services__heading">Our Shuttle Services</h1>
+                    <h2> There are numerous shuttle services to choose from, so why use Eternal Tours and Airport Transfers.</h2>
+                <p class="services__content" >
+                   We pride ourselves in having safe, reliable and enjoyable 
+                travel . We value your safety and ensure that you are always comfortable.
+                When you arrive there will be no hassle. We guarantee a smooth transition from airport to hotel.                
+               We decided that our passengers should not wait for shuttles but have the shuttles wait for them.
+               We also support island-wide airport transfers so now you can visit any hotel you would like
+            </p>
+                <p class="services__content">As a customer you would think for a service like this it would be for a hefty price
+                    but for us , this is just not the case. We offer high quality for a low price. When you have experienced Eternal Tours and Airport Transfers you will be <b>Eternally pleased.</b>
+                </p>
+
+            </div>
         </section>
     </main>
     <script>

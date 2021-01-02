@@ -5,8 +5,8 @@
 @import "../components/header.scss";
 .header {
   @include header-style(
-    linear-gradient(to right bottom, #000046e1, #1cb5e0de),
-    url("../img/hero-airport.jpg")
+    linear-gradient(to right bottom, #000046b7, #1cb5e0bd),
+    url("../img/royalton-negril.jpg")
   );
   &__content-button {
     color: #fff;
@@ -152,7 +152,7 @@ h3 {
   grid-gap: 7rem 4rem;
   &__hotel {
     transition: height 350ms ease-out;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.418);
+    box-shadow: $base-box-shadow;
     height: 5rem;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -160,14 +160,14 @@ h3 {
       border-radius: 0.5rem;
       padding: 1rem;
       text-align: center;
-      background-color: navy;
+      background-color: #487eb0;
       color: #fff;
       position: relative;
     }
   }
 }
 .hotels__hotel__payment-btn {
-  background-color: rgb(8, 253, 8);
+  background-color: #0097e6;
   padding: 1rem;
   color: $base-color;
   border-radius: 1rem;
@@ -180,7 +180,7 @@ span {
 }
 
 .right-arrow {
-  background-color: black;
+  background-color: $base-color;
   width: 2.5rem;
   height: 2.5rem;
   clip-path: polygon(15% 14%, 15% 93%, 84% 57%);
@@ -196,7 +196,7 @@ span {
 }
 
 .hotels-height {
-  height: 32rem;
+  height: 34rem;
 }
 .hotels-hide-description {
   display: none;
