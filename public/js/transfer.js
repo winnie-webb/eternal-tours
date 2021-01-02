@@ -1,11 +1,16 @@
 
 const scrollFunctionality = (() => {
-    const top_scroller_btn = document.querySelector(".header__content-button");
-    const hotels_section = document.querySelector(".hotels");
+    const checkPricingsBtns = document.querySelectorAll(".card-pricings-btn");
+    const topScrollerBtn = document.querySelector(".header__content-button");
+    const hotelsSection = document.querySelector(".hotels");
     
-    top_scroller_btn.onclick = () => {
-        hotels_section.scrollIntoView({behavior:"smooth"})
-    }    
+    function scrollToHotels(){
+        hotelsSection.scrollIntoView({behavior:"smooth"})
+    }
+    checkPricingsBtns.forEach(btn => {
+        btn.addEventListener('click', scrollToHotels)
+    })
+    topScrollerBtn.addEventListener('click',scrollToHotels) 
 })
 
 const hotelHideAndShowFuntionality = ( () => {
