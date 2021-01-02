@@ -11,6 +11,7 @@
     <title>Jamaica Eternal Tours</title>
 </head>
 <body>
+    <!-- Header Component -->
     <header class="header">
         <div class="burger">
             <div class="burger__stroke"></div>
@@ -27,6 +28,7 @@
         </div>
     </header>
     <main>
+        <!-- Video Component -->
         <section class="section-bgvideo">
             <div class="video-wrapper">
                  <video muted loop autoplay>
@@ -35,6 +37,9 @@
             </div>
            
         </section>
+
+        <!-- Features Component -->
+
         <section class="section-main-content">
             <div class="content content-1">
                 <h3 class="content__heading">Affordable</h3>
@@ -57,10 +62,11 @@
                             All of our vehicles are electrostatically cleaned prior our pickup time.</p>
                             </div>
         </section>
+        <!-- Reviews Component -->
         <section class="section-reviews">
         
         </section>
-
+        <!-- Cards Component -->
         <section class="section-cards">
             <h2>Most Popular Tours</h2>
 <div class="swiper-container">
@@ -71,12 +77,12 @@
             <a href="/book">
             <div class=" card-top-<%= card.id %>">
                 <h3 class="card-top__heading"><%= card.name %></h3>
-            </div> </a>
+            </div>
+         </a>
             <div class="card-btm">
                 <p><%= card.type %></p>
                 <a class="card-btm__button" href="/book">Book</a>     
-                <a class="card-btm__link" target="_blank" href="https://www.planetware.com/tourist-attractions/jamaica-jam.htm">Know More ?</a>
-       
+                <!-- <a class="card-btm__link" target="_blank" href="https://www.planetware.com/tourist-attractions/jamaica-jam.htm">Know More ?</a> -->
             </div>
             </div>
        <% })%>
@@ -87,6 +93,7 @@
 
 </div>
 </section>
+<!-- Gallery Component -->
 <section class="section-gallery">
     <div class="gallery">
     <img src="../img/martha-brae.jpg" alt="Martha Brae Jamaica">

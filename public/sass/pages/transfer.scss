@@ -5,14 +5,12 @@
 @import "../components/header.scss";
 .header {
   @include header-style(
-    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    linear-gradient(to right bottom, #000046e1, #1cb5e0de),
     url("../img/hero-airport.jpg")
   );
   &__content-button {
-    color: rgb(167, 167, 167);
-    @include button-default(
-      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
-    );
+    color: #fff;
+    @include button-default(linear-gradient(to right, #000046e1, #1cb5e0de));
   }
 }
 @media (max-width: 580px) {
@@ -48,7 +46,7 @@
 .services {
   color: #000;
   margin-top: 5rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   letter-spacing: 0.12rem;
   line-height: 2.7rem;
   & h2 {
@@ -73,6 +71,42 @@
   }
   .services h2 {
     font-size: 1.5rem;
+  }
+}
+// Gallery Component
+.section-gallery {
+  height: min-content;
+  color: #000;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  &__card {
+    height: 45rem;
+    box-shadow: $base-box-shadow;
+    & h2 {
+      font-size: 1.8rem;
+      background-color: #192a56;
+      color: $base-color;
+      padding: 1rem;
+      margin-top: -1rem;
+    }
+  }
+  & img {
+    width: 100%;
+    height: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,6 +1,5 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
-
 @import "../components/header.scss";
 
 .header {
@@ -56,8 +55,8 @@
   grid-gap: 2rem;
 }
 .content {
-  background-color: $base-color;
-  color: black;
+  background-color: #2f3640;
+  color: #fff;
   box-shadow: $base-box-shadow;
   padding: 2rem;
   border-radius: $base-border-radius;
@@ -66,6 +65,7 @@
   &__heading {
     text-align: center;
     margin-bottom: 3rem;
+    color: $base-heading-color-home;
   }
   &:hover {
     transform: scale(1.04);
@@ -86,6 +86,9 @@
 // Card Component
 .section-cards {
   color: rgb(139, 139, 139);
+  & h2 {
+    color: $base-heading-color-home;
+  }
 }
 h2 {
   margin: 2rem;
@@ -130,10 +133,10 @@ h2 {
   margin-top: 2rem;
   & p:first-child {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 1rem;
     text-align: center;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
   }
   &__link {
     display: block;
