@@ -24,12 +24,7 @@
         "name" : "Blue Mountain",
         "type" : "Adventurous & Relaxing"
     },
-    {
-        "id":5,
-        "price": "$300",
-        "name" : "Rose Hall Great House",
-        "type":"Fun & Interactive"
-    },
+   
     {
         "id":6,
         "price": "$300",

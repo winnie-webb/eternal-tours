@@ -84,7 +84,7 @@ li {
       margin: 0.5rem; } }
 
 .header {
-  background-image: linear-gradient(to right bottom, #000046b7, #1cb5e0bd), url("../img/royalton-negril.jpg");
+  background-image: linear-gradient(to right bottom, rgba(20, 136, 204, 0.7), rgba(43, 50, 178, 0.8)), url("../img/hero-airport.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ li {
     border-radius: 0.4rem;
     margin: 2rem auto;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right, #000046e1, #1cb5e0de);
+    background: linear-gradient(to right bottom, #1488cc, #2b32b2);
     cursor: pointer;
     width: 22rem;
     transition: transform 400ms; }
@@ -160,7 +160,7 @@ li {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 4rem; }
+  gap: 4rem; }
   .gallery__card {
     height: 45rem;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
@@ -217,7 +217,7 @@ h3 {
   margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 7rem 4rem; }
+  gap: 7rem 4rem; }
   .hotels__hotel {
     transition: height 350ms ease-out;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
@@ -292,8 +292,8 @@ span {
 
 ::-webkit-scrollbar-track {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: #1488cc; }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #fff);
+  background: linear-gradient(transparent, #2b32b2);
   border-radius: 10rem; }

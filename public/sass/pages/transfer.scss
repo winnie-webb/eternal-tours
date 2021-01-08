@@ -5,12 +5,18 @@
 @import "../components/header.scss";
 .header {
   @include header-style(
-    linear-gradient(to right bottom, #000046b7, #1cb5e0bd),
-    url("../img/royalton-negril.jpg")
+    linear-gradient(
+      to right bottom,
+      rgba(20, 136, 204, 0.7),
+      rgba(43, 50, 178, 0.8)
+    ),
+    url("../img/hero-airport.jpg")
   );
   &__content-button {
     color: #fff;
-    @include button-default(linear-gradient(to right, #000046e1, #1cb5e0de));
+    @include button-default(
+      linear-gradient(to right bottom, rgb(20, 136, 204), rgb(43, 50, 178))
+    );
   }
 }
 @media (max-width: 580px) {
@@ -85,7 +91,7 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 4rem;
+  gap: 4rem;
   &__card {
     height: 45rem;
     box-shadow: $base-box-shadow;
@@ -152,7 +158,7 @@ h3 {
   margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 7rem 4rem;
+  gap: 7rem 4rem;
   &__hotel {
     transition: height 350ms ease-out;
     box-shadow: $base-box-shadow;
@@ -239,9 +245,9 @@ span {
 }
 ::-webkit-scrollbar-track {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(20, 136, 204);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, $base-color);
+  background: linear-gradient(transparent, rgb(43, 50, 178));
   border-radius: 10rem;
 }

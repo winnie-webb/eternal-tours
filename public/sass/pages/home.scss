@@ -52,7 +52,7 @@
   display: grid;
   margin-bottom: 5rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  gap: 2rem;
 }
 .content {
   background-color: #2f3640;
@@ -85,7 +85,9 @@
 
 // Card Component
 .section-cards {
-  color: rgb(139, 139, 139);
+  text-align: center;
+  width: 100%;
+  margin: 10rem auto;
   & h2 {
     color: $base-heading-color-home;
   }
@@ -94,14 +96,22 @@ h2 {
   margin: 2rem;
   text-align: center;
 }
-.card {
-  width: 15rem;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  height: min-content;
+  color: $base-heading-color-home;
+  text-align: center;
+}
+.cards__card {
   background-color: $base-color;
-  height: 90%;
+  height: 45rem;
   box-shadow: $base-box-shadow;
-  border-radius: 1rem;
   font-size: 1.5rem;
   position: relative;
+  width: 85%;
+  margin: 0 auto;
 }
 .card-top-1 {
   @include card-top-style("../img/dunns-river.jpg");
@@ -114,9 +124,6 @@ h2 {
 }
 .card-top-4 {
   @include card-top-style("../img/blue-mountain.jpg");
-}
-.card-top-5 {
-  @include card-top-style("../img/rose-hall.jpg");
 }
 .card-top-6 {
   @include card-top-style("../img/ys-falls.jpg");
@@ -162,11 +169,20 @@ h2 {
   width: 90%;
   padding: 1rem;
 }
-.swiper-container {
-  width: 85%;
-  height: 60rem;
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .cards__card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 //  Gallery Component
 .section-gallery {
   height: 80vh;
@@ -174,14 +190,14 @@ h2 {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
+  gap: 2rem;
   & img {
     width: 100%;
     height: 20rem;
     transition: transform 400ms;
     cursor: pointer;
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }

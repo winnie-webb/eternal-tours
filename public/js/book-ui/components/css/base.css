@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.forms {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 70%;
+}
+
+.forms__form label {
+  color: #34495e;
+  margin-top: 2rem;
+}
+.forms__form input::-webkit-input-placeholder {
+  color: #7f8c8d;
+  font-size: 1.5rem;
+}
+.input-field {
+  padding: 1.7rem;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 700px) {
+  .forms {
+    width: 85%;
+  }
+}

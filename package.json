@@ -6,7 +6,8 @@
   "scripts": {
     "compile:sass:home": "node-sass public/sass/pages/home.scss public/css/index.css -w",
     "compile:sass:transfer": "node-sass public/sass/pages/transfer.scss public/css/transfer.css -w",
-    "start": "node app.js"
+    "start": "node app.js",
+    "home-build": "webpack public/js/home.js public/dist/home-bundle.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,8 @@
   "devDependencies": {
     "ejs-lint": "^1.1.0",
     "node-sass": "^5.0.0",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
   }
 }

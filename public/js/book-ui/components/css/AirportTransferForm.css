@@ -1,0 +1,43 @@
+.switch-tab {
+  display: flex;
+  justify-content: center;
+}
+.section-airport-transfer-form {
+  color: #34495e;
+}
+.section-airport-transfer-form p {
+  text-align: center;
+  margin: 2rem;
+}
+.switch-tab__tab {
+  margin: 2rem;
+  padding: 0.7rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.126);
+  background-color: #fff;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(0rem);
+  transition: transform 400ms;
+}
+.switch-tab__tab:hover {
+  transform: translateY(-0.5rem);
+}
+.switch-tab__tab span {
+  margin: 0.4rem;
+  display: inline-block;
+}
+.switch-tab__tab #card-icon {
+  width: 4.5rem;
+}
+.switch-tab__tab #paypal-icon {
+  width: 5.5rem;
+}
+.current {
+  /* color: #fff; */
+  border-bottom: 3px solid #273c75;
+}

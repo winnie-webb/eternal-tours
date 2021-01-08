@@ -1,4 +1,4 @@
-// Remember to make the first row already toggled
+import toggleNavbar from "./header.js";
 const scrollFunctionality = (() => {
     const checkPricingsBtns = document.querySelectorAll(".card-pricings-btn");
     const topScrollerBtn = document.querySelector(".header__content-button");
@@ -20,7 +20,6 @@ const scrollFunctionality = (() => {
     })
     topScrollerBtn.addEventListener('click',scrollToHotels) 
 })
-const hotel = document.querySelector(".hotels__hotel")
 
 const hotelHideAndShowFuntionality = ( () => {
 
@@ -44,3 +43,4 @@ const hotelHideAndShowFuntionality = ( () => {
 
 scrollFunctionality();
 hotelHideAndShowFuntionality();
+toggleNavbar();

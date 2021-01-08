@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
@@ -15,8 +15,6 @@ app.get("/",(req,res) => {
    const cards = cardsObject.cards;
     res.render("index",{cards: cards})
 })
-
-app.get("/airport-transfer",(req,res) => {
 const hotelsJSON = fs.readFileSync(`${__dirname}/public/views/hotels.json`);
 const hotelsObject = JSON.parse(hotelsJSON);
 const hotels = hotelsObject.hotels.sort((a,b) => {
@@ -27,11 +25,14 @@ const hotels = hotelsObject.hotels.sort((a,b) => {
   if(nameB < nameA) return 1;
   
   return 0;
+})
+app.get("/airport-transfer",(req,res) => {
+  res.render("transfer",{hotels:hotels});
+
 });
 
-  res.render("transfer",{hotels:hotels});
-})
-app.get("/hotels",(req,res) => res.json(hotels))
+app.get("/hotels",(req,res) => res.json(hotels).send())
+app.get("/book",(req,res) => res.render("book"))
 app.get("*",(req,res) => res.send(`<h1 style="text-align:center; font-family : sans-serif">Not Completed Only the home page design is completed</h1>`))
 
 app.listen(PORT,() => console.log("Server has started"))
