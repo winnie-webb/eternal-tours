@@ -51,7 +51,7 @@ li {
   .header__content__heading2 {
     font-size: 1.8rem; }
 
-@media (max-width: 770px) {
+@media (max-width: 1175px) {
   .header {
     height: 50vh;
     clip-path: none !important; }
@@ -85,7 +85,7 @@ li {
 
 .header {
   margin-bottom: 10rem;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero-opt.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ h2 {
   height: 50%;
   margin-bottom: auto;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/dunns-river.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/dunns-river-opt.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,18 +225,7 @@ h2 {
   height: 50%;
   margin-bottom: auto;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/blue-mountain.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 2rem; }
-
-.card-top-6 {
-  height: 50%;
-  margin-bottom: auto;
-  background-size: cover;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/ys-falls.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/blue-mountain-opt.jpg");
   display: flex;
   align-items: center;
   justify-content: center;

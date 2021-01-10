@@ -4,7 +4,7 @@
 
 .header {
   margin-bottom: 10rem;
-  @include header-style($base-gradient, url("../img/hero.jpg"));
+  @include header-style($base-gradient, url("../img/hero-opt.jpg"));
 
   &__content-button {
     @include button-default($base-gradient);
@@ -114,7 +114,7 @@ h2 {
   margin: 0 auto;
 }
 .card-top-1 {
-  @include card-top-style("../img/dunns-river.jpg");
+  @include card-top-style("../img/dunns-river-opt.jpg");
 }
 .card-top-2 {
   @include card-top-style("../img/martha-brae.jpg");
@@ -123,14 +123,12 @@ h2 {
   @include card-top-style("../img/negril.jpg");
 }
 .card-top-4 {
-  @include card-top-style("../img/blue-mountain.jpg");
+  @include card-top-style("../img/blue-mountain-opt.jpg");
 }
 .card-top-6 {
   @include card-top-style("../img/ys-falls.jpg");
 }
-.card-top-6 {
-  @include card-top-style("../img/ys-falls.jpg");
-}
+
 .card-top-7 {
   @include card-top-style("../img/chukka-atv.jpg");
 }

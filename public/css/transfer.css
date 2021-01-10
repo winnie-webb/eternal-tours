@@ -51,7 +51,7 @@ li {
   .header__content__heading2 {
     font-size: 1.8rem; }
 
-@media (max-width: 770px) {
+@media (max-width: 1175px) {
   .header {
     height: 50vh;
     clip-path: none !important; }
@@ -274,7 +274,7 @@ span {
 .hotels-hide-description {
   display: none; }
 
-@media (max-width: 1000px) {
+@media (max-width: 1175px) {
   .hotels {
     grid-template-columns: repeat(2, 1fr); } }
 
