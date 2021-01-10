@@ -3,7 +3,7 @@ function ToursForm () {
     return (
         <section className="section-form-tours">
 
-            <form className="forms" action="/book/tours" method="POST">
+            <form className="forms" action="/book" method="POST">
                 
                 <div className="forms__form">
                 <label htmlFor="email">Email</label>
@@ -20,8 +20,8 @@ function ToursForm () {
                 <textarea id="message" name="message" className="input-field forms__form__field"></textarea>
                 </div>
 
-                <div className="forms__btn">
-                <input type="submit" />
+                <div className="forms__form-btn">
+                <input className="forms__btn"  type="submit" value="Send" />
                 </div>
             </form>
         </section>

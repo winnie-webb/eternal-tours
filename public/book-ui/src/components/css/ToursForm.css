@@ -7,3 +7,20 @@
 .forms__form {
   margin: 1rem;
 }
+.forms__form-btn {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.forms__btn {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.123);
+  cursor: pointer;
+  display: block;
+  width: 15rem;
+  background-color: #10ac84;
+  color: #fff;
+}
