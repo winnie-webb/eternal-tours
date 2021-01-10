@@ -1,13 +1,12 @@
 import React,{useState,useRef,useEffect} from "react";
-import "./css/HotelsAndPricing.css";
 import loadHotels from "./hotels";
-
+import "./css/HotelsAndPricing.css";
 function HotelsAndPricing() {
 const [price,setPrice] = useState(0);
 const [hotel,setHotel] = useState("Select Hotel");
 const selectedHotelElement = useRef();
 const selectedGroupElement = useRef();
-const hotelsJSON = loadHotels().hotels;
+let hotelsJSON = loadHotels().hotels;
 
 const urlParsed = new URLSearchParams(window.location.search);
 const queryHotel =  urlParsed.get("hotel");

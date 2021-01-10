@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BookComponents from './BookComponents';
+import BookComponents from './components/BookComponents';
+window.React = React;
 ReactDOM.render(
-  <React.StrictMode>
-    <BookComponents />
-  </React.StrictMode>,
+    <BookComponents />,
   document.getElementById('root')
 );
-
+ 

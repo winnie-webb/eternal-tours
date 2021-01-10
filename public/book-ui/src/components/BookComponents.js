@@ -1,4 +1,4 @@
-import FormComponent from "./components/Form";
+import FormComponent from "./Form";
 function BookComponents() {
   return (
     <>

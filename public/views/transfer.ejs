@@ -117,7 +117,7 @@
                            <li><b>$<%= hotel.smallPrice %> USD</b> : 1- 4  passengers traveling as a private group  </li>
                            <li><b>$<%= hotel.largePrice%> USD (per person)</b>  : 5- 9 passengers traveling as a private group </li>
                            <li>Groups of 10 or more please contact us for info on the group rate </li>
-                           <a target="_blank" href="/book/?hotel<%= hotel.name %>"><li class="hotels__hotel__payment-btn">Book</li></a>
+                           <a href="/book/?hotel=<%= hotel.name %>"><li class="hotels__hotel__payment-btn">Book</li></a>
                         </ul>
                    </div>
                <%})%>

@@ -32,8 +32,7 @@ app.get("/airport-transfer",(req,res) => {
 });
 
 app.get("/hotels",(req,res) => res.json(hotels).send())
-app.get("/book",(req,res) => res.render("book"))
-app.get("*",(req,res) => res.send(`<h1 style="text-align:center; font-family : sans-serif">Not Completed Only the home page design is completed</h1>`))
+app.get("/book",(req,res) => res.render("book"));
 
 app.listen(PORT,() => console.log("Server has started"))
 
