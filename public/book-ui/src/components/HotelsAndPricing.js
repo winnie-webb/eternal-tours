@@ -1,5 +1,4 @@
 import React,{useState,useRef,useEffect} from "react";
-import "./css/HotelsAndPricing.css";
 function HotelsAndPricing() {
 const [price,setPrice] = useState(0);
 const [hotel,setHotel] = useState("Select Hotel");

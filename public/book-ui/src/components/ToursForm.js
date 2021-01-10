@@ -1,4 +1,3 @@
-import "./css/ToursForm.css"
 function ToursForm () {
     return (
         <section className="section-form-tours">

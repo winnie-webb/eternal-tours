@@ -1,12 +1,12 @@
 const path = require('path');
 
-module.exports = {
-  entry: './public/book-ui/src/book.js',
+const reactJsBundle = 
+{
+  entry:'./public/book-ui/src/book.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname,"public","js", 'dist'),
   },
-  
   module: {
     rules: [
       {
@@ -29,8 +29,15 @@ module.exports = {
           },
         ],
       },
-      { test: /\.css$/, use: 'css-loader' }
-
+      {
+        test: /\.css$/i,
+        use: [
+          { loader: 'style-loader', options: { injectType: 'styleTag' } },
+          'css-loader',
+        ],
+      }
     ]
   }
-};
+}
+
+module.exports = reactJsBundle;

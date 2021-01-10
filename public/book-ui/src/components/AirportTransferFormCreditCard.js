@@ -1,4 +1,3 @@
-import "./css/AirportTransferFormCreditCard.css";
 function AirportTransferFormCreditCard(){
     return (
       <section className="section-form-transfer">

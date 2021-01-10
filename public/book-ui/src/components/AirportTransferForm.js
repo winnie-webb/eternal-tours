@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import  AirportTransferFormCreditCard  from "./AirportTransferFormCreditCard";
 import AirportTransferFormPaypal from "./AirportTransferFormPaypal";
 import HotelsAndPricing from "./HotelsAndPricing";
-import "./css/AirportTransferForm.css";
 import paypalIcon from"./svg/paypal.svg";
 import cardIcon from "./svg/credit-card.svg";
 function AirportTransferForm(){

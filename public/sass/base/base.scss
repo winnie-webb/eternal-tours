@@ -1,34 +1,32 @@
 @import "../abstracts/variables.scss";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  
-  }
-  
-  html {
-    font-family: 'Open Sans','Arial',sans-serif;
-    font-weight: 300;
-    font-size: 62.5%;
-    list-style: none; 
-    color: $base-color;
-    overflow-x: hidden;
-  }
-  body{
-      font-size: 2rem;
-      padding: 2rem;
-      overflow-x: hidden;
-     
-  }
-  a{
-    color: $base-color;
 }
-li {padding: 1rem;}
-#home-link{
+
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  list-style: none;
+  color: $base-color;
+  overflow-x: hidden;
+}
+body {
+  font-size: 2rem;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+a {
+  color: $base-color;
+}
+li {
+  padding: 1rem;
+}
+#home-link {
   margin-right: auto;
 }
-  @import "./typography.scss";
-

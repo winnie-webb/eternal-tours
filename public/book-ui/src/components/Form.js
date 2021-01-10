@@ -1,8 +1,7 @@
 import React, {useState,useEffect} from "react";
 import AirportTransferForm from "./AirportTransferForm";
 import ToursForm from "./ToursForm";
-import "./css/base.css";
-import "./css/Form.css";
+
 function FormComponent () { 
 const urlParams = new URLSearchParams(window.location.search);
 const selectedForm = urlParams.get('selectedForm');
