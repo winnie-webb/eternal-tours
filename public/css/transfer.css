@@ -200,13 +200,20 @@ li {
     background-color: #0097e6;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2); }
 
+@media (max-width: 1100px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); } }
+
 @media (max-width: 800px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr); } }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .gallery {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+    .gallery__card {
+      width: 80%;
+      margin: 0 auto; } }
 
 h3 {
   text-align: center;
