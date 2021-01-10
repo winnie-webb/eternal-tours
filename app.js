@@ -1,7 +1,6 @@
 const path = require("path");
 const fs = require("fs");
 const express = require("express");
-const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 4000
 app.use(express.static(path.join(__dirname,"public")));
@@ -32,39 +31,12 @@ app.get("/airport-transfer",(req,res) => {
 
 });
 
-app.get("/hotels",(req,res) => res.json(hotels).send())
+app.get("/hotels",(req,res) => res.json(hotels));
 app.get("/book",(req,res) => res.render("book"));
-app.post("/book",async (req,res) => {
-  const {email,message,name} = req.body;
 
-    let transporter = nodemailer.createTransport({
-      host: 'smtp.sendgrid.net',
-        port: 587,
-        
-    });
-  try{
-    let info = await transporter.sendMail({
-      from: `${name} ${email}`, 
-      to: "johnbaker11568@gmail.com", 
-      subject: "Book Tour", 
-      text: message,
-      auth: {
-        user: process.env.BIZEMAIL,
-        pass: "password"
-      }
-    });
-    res.redirect('/book')
-    console.log("Message sent: %s", info.messageId);
-    
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  }
-  catch(err){
-    console.log(err)
-    res.redirect("/book?selectedForm=tours")
-  }
+app.post("/book",async (req,res) => {
   
 })
 app.listen(PORT,() => console.log("Server has started"))
 
 //  Setup Paypal API
-// API-KEY = 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
