@@ -16,27 +16,35 @@ useEffect(() => {
 fetch("/hotels")
 .then(res => res.json())
 .then(res => {
-    let filterHotel;
+    let filterHotels;
     if(queryPlace){
     setHotel(`Select Hotel ${queryPlace}`);
 
     switch (queryPlace){
         case "montego bay" : 
-        filter = hotel => hotel.place = "montego bay"
+        filterHotels = hotel => hotel.place === "montego bay";
         break;
 
         case "negril" : 
-        filter = hotel => hotel.smallPrice === 73 ;
+        filterHotels = hotel => hotel.place === "negril" ;
+        break;
+
+        case "ocho rios" : 
+        filterHotels = hotel => hotel.place === "ocho rios" ;
+        break;
+
+        case "falmoth" : 
+        filterHotels = hotel => hotel.place === "falmoth" ;
         break;
 
     }
 
 }
     else {
-        filterHotel = hotel => hotel;
+        filterHotels = hotel => hotel;
     }
-    setHotelsJSON(res.filter(hotel => filterHotel(hotel)));
-
+    const filter = res.filter(hotel => filterHotels(hotel));
+    setHotelsJSON(filter);
 })
 },[])
 

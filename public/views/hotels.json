@@ -28,6 +28,7 @@
             "largePrice": 6,
             "place" : "montego bay"
         },
+        
         {
             "name":"Iberostar Suites",
             "smallPrice": 29,
@@ -37,7 +38,8 @@
         {
             "name":"Riu Negril",
             "smallPrice": 73,
-            "largePrice": 17
+            "largePrice": 17,
+            "place":"negril"
         },
         {
             "name":"Riu Montego Bay",
@@ -67,7 +69,8 @@
         {
             "name":"Bahia Principe Grand",
             "smallPrice": 73,
-            "largePrice": 17
+            "largePrice": 17,
+            "place":"negril"
         },
         {
             "name":"Hilton Rose Hall",
@@ -88,7 +91,8 @@
         {
             "name":"Royalton Negril",
             "smallPrice": 73,
-            "largePrice": 17
+            "largePrice": 17,
+            "place":"negril"
         },
         {
             "name":"Secrets St.James",
@@ -105,7 +109,8 @@
         {
             "name":"Sunset at the Palms",
             "smallPrice": 73,
-            "largePrice": 17
+            "largePrice": 17,
+            "place":"negril"
         },
         {
             "name":"Hyatt Rose Hall",
@@ -132,7 +137,8 @@
         {
             "name":"Riu Ocho Rios",
             "smallPrice": 84,
-            "largePrice": 19
+            "largePrice": 19,
+            "place" : "ocho rios"
         },
         {
             "name":"Sandals Montego Bay",
@@ -143,7 +149,14 @@
         {
             "name":"Moonpalace Ocho Rios",
             "smallPrice": 84,
-            "largePrice": 19
+            "largePrice": 19,
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Sandals Ocho Rios",
+            "smallPrice": 84,
+            "largePrice": 19,
+            "place" : "ocho rios"
         }
         
     ]
