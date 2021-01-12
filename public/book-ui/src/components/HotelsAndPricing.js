@@ -1,18 +1,46 @@
 import React,{useState,useRef,useEffect} from "react";
 function HotelsAndPricing() {
+const urlParsed = new URLSearchParams(window.location.search);
+const queryHotel =  urlParsed.get("hotel");
+const queryPlace = urlParsed.get("place");
+
 const [price,setPrice] = useState(0);
-const [hotel,setHotel] = useState("Select Hotel");
+const [hotel,setHotel] = useState(`Select Your Hotel`);
 const selectedHotelElement = useRef();
-const selectedGroupElement = useRef();
+const checkedInput1_4 = useRef();
+const checkedInput5_9 = useRef();
 const [hotelsJSON,setHotelsJSON] = useState([]);
+
+
 useEffect(() => {
 fetch("/hotels")
 .then(res => res.json())
-.then(res => setHotelsJSON(res))
+.then(res => {
+    let filterHotel;
+    if(queryPlace){
+    setHotel(`Select Hotel ${queryPlace}`);
+
+    switch (queryPlace){
+        case "montego bay" : 
+        filter = hotel => hotel.place = "montego bay"
+        break;
+
+        case "negril" : 
+        filter = hotel => hotel.smallPrice === 73 ;
+        break;
+
+    }
+
+}
+    else {
+        filterHotel = hotel => hotel;
+    }
+    setHotelsJSON(res.filter(hotel => filterHotel(hotel)));
+
+})
 },[])
 
-const urlParsed = new URLSearchParams(window.location.search);
-const queryHotel =  urlParsed.get("hotel");
+
 
 function checkQueryForHotel () {
     hotelsJSON.map(hotel => {
@@ -28,10 +56,10 @@ useEffect(checkQueryForHotel,[hotelsJSON,queryHotel])
 function controlPricing() {
 
     const selectedHotel = selectedHotelElement.current.value;
-    const selectedGroup = selectedGroupElement.current.value;
-
+    const input1_4 = checkedInput1_4.current.checked;
+    const input5_9 = checkedInput5_9.current.checked;
     const isHotelSelectedValid = selectedHotel !== "Select Hotel";
-    const isGroupSelectedValid = selectedGroup === "1 - 4" || selectedGroup === "5 - 9";
+    const isGroupSelectedValid = input1_4 || input5_9;
 
     const areOptionsValid = isHotelSelectedValid && isGroupSelectedValid;
 
@@ -39,8 +67,8 @@ function controlPricing() {
     if ( areOptionsValid ){
         hotelsJSON.map(hotel => {
             if(selectedHotel === hotel.name){
-            if (selectedGroup === "1 - 4") setPrice(hotel.smallPrice);
-                else if (selectedGroup === "5 - 9") setPrice(hotel.largePrice);
+            if (input1_4) setPrice(hotel.smallPrice);
+                else if (input5_9) setPrice(hotel.largePrice);
                 else setPrice(0)
             return hotel;
             }
@@ -52,16 +80,31 @@ function controlPricing() {
 return (
     <section className="section-hotels-pricing">
         <div className="hotels-pricing">
+            <select className="hotels-pricing__select">
+                <option>Would you like to change hotel location</option>
+                <option>Negril</option>
+                <option>Montego Bay</option>
+                <option>Ocho Rios</option>
+                <option>Falmoth</option>
+                <option>Hanover</option>
+            </select>
         <select className="hotels-pricing__select" ref={selectedHotelElement} onChange={controlPricing}>
             <option>{hotel}</option>
             {hotelsJSON.map((hotel,index) => <option key={index}>{hotel.name}</option>)}
         </select>
-        <select className="hotels-pricing__select" ref={selectedGroupElement} onChange={controlPricing}>
-            <option>Select Group Of Persons</option>
-            <option>1 - 4</option>
-            <option>5 - 9</option>
-            <option>Please Contact Us For Groups Over 10</option>
-        </select>
+        <div className="hotels-pricing__group">
+            <h3>Select Group Of Persons</h3>
+            <div className="hotels-pricing__group__options">
+            <input onChange = {controlPricing} ref={checkedInput1_4} id="1_4__option" type="radio" name="group-selection" />
+            <label for="1_4__option">1 - 4</label>
+            </div>
+
+            <div className="hotels-pricing__group__options">
+            <input onChange = {controlPricing} ref={checkedInput5_9}  id="5_9__option" type="radio" name="group-selection"/>
+            <label for="5_9__option">5 - 9</label>
+            </div>
+
+        </div>
         </div>
         <h2>Price ${price}</h2>
 

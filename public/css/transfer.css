@@ -152,9 +152,13 @@ li {
 .section-gallery {
   margin-top: 8rem;
   height: min-content; }
-  .section-gallery h3 {
-    margin: 4rem;
-    color: #40739e; }
+
+.sub-heading {
+  margin: 4rem;
+  padding: 4rem;
+  color: #40739e;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray; }
 
 .gallery {
   display: grid;

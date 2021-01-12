@@ -3,7 +3,8 @@
         {
             "name":"Breathless Resort",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Excellence Oyster Bay",
@@ -18,17 +19,20 @@
         {
             "name":"Halfmoon Rose Hall",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Iberostar Grand",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Iberostar Suites",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Riu Negril",
@@ -68,7 +72,8 @@
         {
             "name":"Hilton Rose Hall",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Royalton Blue Waters",
@@ -88,12 +93,14 @@
         {
             "name":"Secrets St.James",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Secrets Wild Orchid",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         }, 
         {
             "name":"Sunset at the Palms",
@@ -103,12 +110,14 @@
         {
             "name":"Hyatt Rose Hall",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Jewel Grande",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Jewel Runaway Bay",
@@ -128,7 +137,8 @@
         {
             "name":"Sandals Montego Bay",
             "smallPrice": 29,
-            "largePrice": 6
+            "largePrice": 6,
+            "place" : "montego bay"
         },
         {
             "name":"Moonpalace Ocho Rios",

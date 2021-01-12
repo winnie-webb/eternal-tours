@@ -35,7 +35,7 @@ app.get("/hotels",(req,res) => res.json(hotels));
 app.get("/book",(req,res) => res.render("book"));
 
 app.post("/book",async (req,res) => {
-  
+  res.redirect("/")
 })
 app.listen(PORT,() => console.log("Server has started"))
 
