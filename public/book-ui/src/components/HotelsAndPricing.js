@@ -66,7 +66,7 @@ function controlPricing() {
     const selectedHotel = selectedHotelElement.current.value;
     const input1_4 = checkedInput1_4.current.checked;
     const input5_9 = checkedInput5_9.current.checked;
-    const isHotelSelectedValid = selectedHotel !== "Select Hotel";
+    const isHotelSelectedValid = !selectedHotel.includes("Select");
     const isGroupSelectedValid = input1_4 || input5_9;
 
     const areOptionsValid = isHotelSelectedValid && isGroupSelectedValid;
@@ -88,14 +88,6 @@ function controlPricing() {
 return (
     <section className="section-hotels-pricing">
         <div className="hotels-pricing">
-            <select className="hotels-pricing__select">
-                <option>Would you like to change hotel location</option>
-                <option>Negril</option>
-                <option>Montego Bay</option>
-                <option>Ocho Rios</option>
-                <option>Falmoth</option>
-                <option>Hanover</option>
-            </select>
         <select className="hotels-pricing__select" ref={selectedHotelElement} onChange={controlPricing}>
             <option>{hotel}</option>
             {hotelsJSON.map((hotel,index) => <option key={index}>{hotel.name}</option>)}
