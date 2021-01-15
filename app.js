@@ -1,8 +1,10 @@
 const path = require("path");
 const fs = require("fs");
 const express = require("express");
+const nodemailer = require("nodemailer");
 const app = express();
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4000;
+
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
@@ -32,11 +34,13 @@ app.get("/airport-transfer",(req,res) => {
 });
 
 app.get("/hotels",(req,res) => res.json(hotels));
+
 app.get("/book",(req,res) => res.render("book"));
 
-app.post("/book",async (req,res) => {
-  res.redirect("/")
-})
+
+app.post("/email",(req,res) => {
+  require("./src/models/sendMail")(nodemailer,req,res)
+});
 app.listen(PORT,() => console.log("Server has started"))
 
 //  Setup Paypal API
