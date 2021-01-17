@@ -4,6 +4,8 @@ const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 4000;
+const hotels = require("./src/models/parseHotels");
+
 
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
@@ -17,20 +19,9 @@ app.get("/",(req,res) => {
    const cards = cardsObject.cards;
     res.render("index",{cards: cards})
 })
-const hotelsJSON = fs.readFileSync(`${__dirname}/public/views/hotels.json`);
-const hotelsObject = JSON.parse(hotelsJSON);
-const hotels = hotelsObject.hotels.sort((a,b) => {
-  const nameA = a.name.toLowerCase();
-  const nameB = b.name.toLowerCase();
 
-  if(nameA < nameB) return -1;
-  if(nameB < nameA) return 1;
-  
-  return 0;
-})
 app.get("/airport-transfer",(req,res) => {
   res.render("transfer",{hotels:hotels});
-
 });
 
 app.get("/hotels",(req,res) => res.json(hotels));
