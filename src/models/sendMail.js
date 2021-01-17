@@ -15,7 +15,7 @@ function sendMail (nodemailer,req,res) {
       from: email,
       to: "wbrown152020@gmail.com",
       subject: 'Book Tour',
-      text: `${name} (${email}) says: ${message}`
+      text: `${name} says ${message}`
     }
     smtpTrans.sendMail(mailOpts)
     .then(res.json({message: "Message was received"}))

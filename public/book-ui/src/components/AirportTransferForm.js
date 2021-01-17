@@ -8,31 +8,30 @@ function AirportTransferForm(){
 
     const [CurrentForm,setForm] = useState(<AirportTransferFormCreditCard />);
     const [currentCC,setCurrentCC] = useState("current switch-tab__tab");
-
     const [currentPaypal,setCurrentPaypal] = useState("switch-tab__tab");
+    
+    function toggleToCCSection () {
+      setForm(<AirportTransferFormCreditCard />);
+      setCurrentCC("current switch-tab__tab");
+      setCurrentPaypal("switch-tab__tab");
+    }
+    function toggleToPaypal(){
+      setForm(<AirportTransferFormPaypal />);
+      setCurrentCC("switch-tab__tab");
+      setCurrentPaypal("current switch-tab__tab");
+          
+    }
     return (
         <section className="section-airport-transfer-form">
               <HotelsAndPricing/>
             <p>Payment Methods</p>
 
 <div className="switch-tab">
-        <div className={currentCC} onClick={() => {
-
-          setForm(<AirportTransferFormCreditCard />);
-          setCurrentCC("current switch-tab__tab");
-
-          setCurrentPaypal("switch-tab__tab")
-        }}>
+        <div className={currentCC} onClick={toggleToCCSection}>
           <img id="card-icon" src={cardIcon} alt="Credit Card Icon" />
         <span>Card</span>
         </div>
-        <div className={currentPaypal} onClick={() => {
-
-          setForm(<AirportTransferFormPaypal />);
-          setCurrentCC("switch-tab__tab");
-          setCurrentPaypal("current switch-tab__tab")
-          
-        }}>
+        <div className={currentPaypal} onClick={toggleToPaypal}>
         <img id="paypal-icon" src={paypalIcon} alt="Paypal Icon" />
         </div>
       </div>
