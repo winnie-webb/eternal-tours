@@ -1,5 +1,10 @@
-const hotelsJSON = fs.readFileSync(`${__dirname}/public/views/hotels.json`);
+const fs = require("fs");
+const path = require("path");
+
+const hotelsPath = path.join(__dirname,"../","../","public","views","hotels.json");
+const hotelsJSON = fs.readFileSync(hotelsPath);
 const hotelsObject = JSON.parse(hotelsJSON);
+
 const hotels = hotelsObject.hotels.sort((a,b) => {
   const nameA = a.name.toLowerCase();
   const nameB = b.name.toLowerCase();
@@ -10,4 +15,4 @@ const hotels = hotelsObject.hotels.sort((a,b) => {
   return 0;
 })
 
-module.export = hotels;
+module.exports = hotels;
