@@ -1,5 +1,6 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
+@import "../components/features.scss";
 
 // Header Component
 @import "../components/header.scss";
@@ -83,6 +84,7 @@
 .section-gallery {
   margin-top: 8rem;
   height: min-content;
+  margin-bottom: 5rem;
 }
 .sub-heading {
   margin: 4rem;
@@ -90,6 +92,7 @@
   color: #40739e;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+  font-size: 3rem;
 }
 .gallery {
   display: grid;
@@ -163,14 +166,15 @@
 // Hotels Component
 h3 {
   text-align: center;
-  font-size: 3rem;
 }
-
 .hotels {
   margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 7rem 4rem;
+  & h3 {
+    font-size: 3rem;
+  }
   &__hotel {
     transition: height 350ms ease-out;
     box-shadow: $base-box-shadow;

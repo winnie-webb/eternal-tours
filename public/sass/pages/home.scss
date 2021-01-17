@@ -1,6 +1,7 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
 @import "../components/header.scss";
+@import "../components/features.scss";
 
 .header {
   margin-bottom: 10rem;
@@ -47,41 +48,6 @@
 }
 
 // Main Content Component
-
-.section-main-content {
-  display: grid;
-  margin-bottom: 5rem;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-.content {
-  background-color: #2f3640;
-  color: #fff;
-  box-shadow: $base-box-shadow;
-  padding: 2rem;
-  border-radius: $base-border-radius;
-  transform: scale(1);
-  transition: transform 400ms;
-  &__heading {
-    text-align: center;
-    margin-bottom: 3rem;
-    color: $base-heading-color-home;
-  }
-  &:hover {
-    transform: scale(1.04);
-  }
-}
-
-@media (max-width: 900px) {
-  .section-main-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 550px) {
-  .section-main-content {
-    grid-template-columns: 1fr;
-  }
-}
 
 // Card Component
 .section-cards {
