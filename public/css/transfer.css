@@ -15,7 +15,8 @@ html {
 
 body {
   font-size: 2rem;
-  padding: 2rem; }
+  padding: 2rem;
+  overflow-x: hidden; }
 
 a {
   color: #fff; }
