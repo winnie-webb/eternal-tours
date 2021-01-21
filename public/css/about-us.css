@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none; }
+
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+  list-style: none;
+  color: #fff;
+  overflow-x: hidden; }
+
+body {
+  font-size: 2rem;
+  padding: 2rem;
+  overflow-x: hidden; }
+
+a {
+  color: #fff; }
+
+li {
+  padding: 1rem; }
+
+#home-link {
+  margin-right: auto; }
+
+.header__nav__links {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  position: relative; }
+  .header__nav__links__link {
+    margin: 1rem; }
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  white-space: nowrap; }
+  .header__content__heading {
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    margin: 2rem; }
+  .header__content__heading2 {
+    font-size: 1.8rem; }
+
+@media (max-width: 1175px) {
+  .header {
+    height: 50vh;
+    clip-path: none !important; }
+    .header__nav__links {
+      display: block;
+      position: absolute;
+      top: 5rem;
+      right: 1rem;
+      background-color: #fff;
+      color: #000;
+      z-index: 2;
+      height: min-content;
+      box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
+      border-radius: 0.4rem;
+      transform: translateX(35rem);
+      transition: transform 400ms; }
+      .header__nav__links__link a {
+        color: #666666; }
+  .navbar-toggle {
+    transform: translateX(0rem); }
+  .burger {
+    position: absolute;
+    padding: 0.5rem;
+    right: 2rem;
+    top: 1rem; }
+    .burger .burger__stroke {
+      width: 4rem;
+      height: 0.5rem;
+      background-color: #fff;
+      margin: 0.5rem; } }
+
+.header {
+  background-image: linear-gradient(to top, rgba(9, 32, 63, 0.8) 0%, rgba(83, 120, 149, 0.8) 100%), url("../img/hero-about-us.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  height: 90vh;
+  position: relative; }
+  .header__content-button {
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    margin: 2rem auto;
+    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    background: #182c61;
+    cursor: pointer;
+    width: 22rem;
+    transition: transform 400ms; }
+    .header__content-button:hover {
+      transform: translateY(-0.5rem); }

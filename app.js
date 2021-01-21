@@ -22,7 +22,7 @@ app.get("/airport-transfer",(req,res) => {
 app.get("/hotels",(req,res) => res.json(hotels));
 app.get("/book",(req,res) => res.render("book"));
 
-app.get("/about-us",(req,res) => res.render("about-us"));
+app.get("/about-us",(req,res) => res.render("about-us",{title:"Welcome To JETT"}));
 
 app.post("/email",(req,res) => require("./src/models/sendMail")(nodemailer,req,res));
 app.listen(PORT,() => console.log("Server has started"))

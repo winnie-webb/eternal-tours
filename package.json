@@ -6,6 +6,7 @@
   "scripts": {
     "compile:sass:home": "node-sass public/sass/pages/home.scss public/css/index.css -w",
     "compile:sass:transfer": "node-sass public/sass/pages/transfer.scss public/css/transfer.css -w",
+    "compile:sass:about-us": "node-sass public/sass/pages/about-us.scss public/css/about-us.css -w",
     "start": "node app.js"
   },
   "keywords": [],

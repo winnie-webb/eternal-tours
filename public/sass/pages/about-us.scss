@@ -1,0 +1,17 @@
+@import "../base/base.scss";
+@import "../abstracts/mixins.scss";
+@import "../components/header.scss";
+
+.header {
+  @include header-style(
+    linear-gradient(
+      to top,
+      rgba(9, 32, 63, 0.8) 0%,
+      rgba(83, 120, 149, 0.8) 100%
+    ),
+    url("../img/hero-about-us.jpg")
+  );
+  &__content-button {
+    @include button-default(#182c61);
+  }
+}
