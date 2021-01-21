@@ -1,8 +1,9 @@
 @import "../base/base.scss";
 @import "../abstracts/mixins.scss";
 @import "../components/header.scss";
-
+@import "../components/features.scss";
 .header {
+  margin-bottom: 10rem;
   @include header-style(
     linear-gradient(
       to top,
@@ -14,4 +15,10 @@
   &__content-button {
     @include button-default(#182c61);
   }
+}
+
+// Services Section
+
+.section-services {
+  color: #000;
 }

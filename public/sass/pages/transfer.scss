@@ -48,38 +48,7 @@
     font-size: 1rem;
   }
 }
-// Services Component
 
-.services {
-  color: #000;
-  margin-top: 5rem;
-  font-size: 1.7rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.7rem;
-  & h2 {
-    margin-bottom: 3rem;
-    font-weight: 600;
-    font-size: 2rem;
-  }
-  &__heading {
-    text-align: center;
-    padding: 3rem;
-    font-size: 4rem;
-    color: rgb(82, 82, 82);
-    white-space: nowrap;
-  }
-  &__content {
-    margin-bottom: 2rem;
-  }
-}
-@media (max-width: 400px) {
-  .services__heading {
-    font-size: 1.8rem;
-  }
-  .services h2 {
-    font-size: 1.5rem;
-  }
-}
 // Gallery Component
 .section-gallery {
   margin-top: 8rem;
