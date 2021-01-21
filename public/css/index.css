@@ -10,12 +10,12 @@ html {
   font-weight: 300;
   font-size: 62.5%;
   list-style: none;
-  color: #fff; }
+  color: #fff;
+  overflow-x: hidden; }
 
 body {
   font-size: 2rem;
-  padding: 2rem;
-  overflow-x: hidden; }
+  padding: 2rem; }
 
 a {
   color: #fff; }

@@ -6,16 +6,22 @@ const PORT = process.env.PORT || 4000;
 const hotels = require("./src/models/parseHotels");
 const cards = require("./src/models/parseCards");
 
+// Middleware
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"public/views"))
 
-app.get("/",(req,res) => res.render("index",{cards: cards}))
-app.get("/airport-transfer",(req,res) => res.render("transfer",{hotels:hotels}));
+app.get("/",(req,res) => {
+    res.render("index",{cards: cards,title:"Jamaica Eternal Tours"})
+})
+app.get("/airport-transfer",(req,res) => {
+     res.render("transfer",{hotels:hotels,title : "Jamaica Eternal Airport Transfers"})
+})
 app.get("/hotels",(req,res) => res.json(hotels));
 app.get("/book",(req,res) => res.render("book"));
+
 app.get("/about-us",(req,res) => res.render("about-us"));
 
 app.post("/email",(req,res) => require("./src/models/sendMail")(nodemailer,req,res));

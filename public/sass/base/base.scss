@@ -14,11 +14,11 @@ html {
   font-size: 62.5%;
   list-style: none;
   color: $base-color;
+  overflow-x: hidden;
 }
 body {
   font-size: 2rem;
   padding: 2rem;
-  overflow-x: hidden;
 }
 a {
   color: $base-color;
