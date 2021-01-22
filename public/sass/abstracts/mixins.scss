@@ -42,3 +42,8 @@
   height: 90vh;
   position: relative;
 }
+@mixin centerFlexy() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
