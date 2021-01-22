@@ -6,10 +6,6 @@
 .header {
   margin-bottom: 10rem;
   @include header-style($base-gradient, url("../img/hero-opt.jpg"));
-
-  &__content-button {
-    @include button-default($base-gradient);
-  }
 }
 @media (max-width: 420px) {
   .header__content__heading {

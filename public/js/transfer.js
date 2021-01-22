@@ -1,7 +1,6 @@
 import toggleNavbar from "./header.js";
 const scrollFunctionality = (() => {
     const checkPricingsBtns = document.querySelectorAll(".card-pricings-btn");
-    const topScrollerBtn = document.querySelector(".header__content-button");
     const hotelsSection = document.querySelector(".right-arrow");
     const hotels = document.querySelectorAll(".hotels__hotel");
     function scrollToHotels(){
@@ -18,7 +17,6 @@ const scrollFunctionality = (() => {
             scrollToHotels()
         } )
     })
-    topScrollerBtn.addEventListener('click',scrollToHotels) 
 })
 
 const hotelHideAndShowFuntionality = ( () => {

@@ -73,11 +73,11 @@ li {
   white-space: nowrap; }
   .header__content__heading {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.2rem;
     margin: 2rem; }
   .header__content__heading2 {
-    font-size: 1.8rem; }
+    font-size: 2rem; }
 
 @media (max-width: 1175px) {
   .header {
@@ -104,7 +104,8 @@ li {
     position: absolute;
     padding: 0.5rem;
     right: 2rem;
-    top: 1rem; }
+    top: 1rem;
+    cursor: pointer; }
     .burger .burger__stroke {
       width: 4rem;
       height: 0.5rem;
@@ -119,18 +120,6 @@ li {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   height: 90vh;
   position: relative; }
-  .header__content-button {
-    color: #fff;
-    padding: 0.8rem;
-    border-radius: 0.4rem;
-    margin: 2rem auto;
-    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to right bottom, #1488cc, #2b32b2);
-    cursor: pointer;
-    width: 22rem;
-    transition: transform 400ms; }
-    .header__content-button:hover {
-      transform: translateY(-0.5rem); }
 
 @media (max-width: 580px) {
   .header__content__heading {
@@ -152,31 +141,6 @@ li {
     font-size: 1.3rem; }
   .header__content__heading2 {
     font-size: 1rem; } }
-
-.services {
-  color: #000;
-  margin-top: 5rem;
-  font-size: 1.7rem;
-  letter-spacing: 0.12rem;
-  line-height: 2.7rem; }
-  .services h2 {
-    margin-bottom: 3rem;
-    font-weight: 600;
-    font-size: 2rem; }
-  .services__heading {
-    text-align: center;
-    padding: 3rem;
-    font-size: 4rem;
-    color: #525252;
-    white-space: nowrap; }
-  .services__content {
-    margin-bottom: 2rem; }
-
-@media (max-width: 400px) {
-  .services__heading {
-    font-size: 1.8rem; }
-  .services h2 {
-    font-size: 1.5rem; } }
 
 .section-gallery {
   margin-top: 8rem;

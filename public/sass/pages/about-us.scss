@@ -12,9 +12,6 @@
     ),
     url("../img/hero-about-us.jpg")
   );
-  &__content-button {
-    @include button-default(#182c61);
-  }
 }
 
 // Services Component

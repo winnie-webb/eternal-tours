@@ -13,12 +13,6 @@
     ),
     url("../img/hero-airport.jpg")
   );
-  &__content-button {
-    color: #fff;
-    @include button-default(
-      linear-gradient(to right bottom, rgb(20, 136, 204), rgb(43, 50, 178))
-    );
-  }
 }
 @media (max-width: 580px) {
   .header__content__heading {
