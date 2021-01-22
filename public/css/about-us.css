@@ -204,25 +204,34 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 0 auto; }
   .cofounder__image {
     width: 12rem;
     height: 12rem;
     border-radius: 50%;
-    shape-outside: circle(50%);
-    float: left;
     margin-right: 2rem;
     border: 3px solid #fff; }
   .cofounder__footer {
     font-size: 1.2rem;
-    margin-top: 4rem; }
+    margin-top: 2rem; }
 
 .cofounder__footer__heading {
   margin-bottom: 1rem; }
 
 .cofounder__footer__description {
   color: #b1b1b1; }
+
+.check-reviews {
+  margin-top: 0.2rem;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .check-reviews img {
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem; }
 
 @media (max-width: 650px) {
   .cofounder__content {
