@@ -122,17 +122,27 @@ li {
   height: 90vh;
   position: relative; }
 
+@media (max-width: 530px) {
+  .header__content__heading {
+    font-size: 3rem; }
+  .header__content__heading2 {
+    font-size: 1.5rem; } }
+
 @media (max-width: 420px) {
   .header__content__heading {
     font-size: 2rem; }
   .header__content__heading2 {
     font-size: 1.4rem; } }
 
+@media (max-width: 380px) {
+  .header__content__heading2 {
+    font-size: 1.2rem; } }
+
 @media (max-width: 320px) {
   .header__content__heading {
     font-size: 1.5rem; }
   .header__content__heading2 {
-    font-size: 1.2rem; } }
+    font-size: 1rem; } }
 
 .section-bgvideo {
   margin: 3rem;
