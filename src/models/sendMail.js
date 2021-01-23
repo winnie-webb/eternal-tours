@@ -2,7 +2,7 @@ require('dotenv').config();
 function sendMail (nodemailer,req,res) {
     const {email,name,message} = req.body;
     const smtpTrans = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      service: 'Gmail',
       port: 465,
       secure: true,
       auth: {
@@ -13,7 +13,7 @@ function sendMail (nodemailer,req,res) {
   
     const mailOpts = {
       from: email,
-      to: "wbrown152020@gmail.com",
+      to: process.env.GMAIL__USER,
       subject: 'Book Tour',
       text: `${name} says ${message}`
     }

@@ -124,15 +124,7 @@
     margin: 0.5rem;
   }
 }
-@media (max-width: 650px) {
-  .cofounder__content {
-    width: 100%;
-    & p {
-      overflow-y: scroll;
-      height: 70vh;
-    }
-  }
-}
+
 @media (max-width: 950px) {
   .cofounder__content {
     flex-direction: column;
@@ -140,5 +132,33 @@
       margin: 0;
       margin-bottom: 2rem;
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .cofounder__content {
+    width: 100%;
+    & p {
+      overflow-y: scroll;
+      padding: 1rem;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .header__content__heading {
+    font-size: 2.5rem;
+  }
+  .header__content__heading2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .header__content__heading2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 470px) {
+  .cofounder__content p {
+    height: 30vh;
   }
 }

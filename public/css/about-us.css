@@ -75,7 +75,8 @@ li {
     position: absolute;
     padding: 0.5rem;
     right: 2rem;
-    top: 1rem; }
+    top: 1rem;
+    cursor: pointer; }
     .burger .burger__stroke {
       width: 4rem;
       height: 0.5rem;
@@ -222,16 +223,30 @@ li {
     height: 10rem;
     margin: 0.5rem; }
 
-@media (max-width: 650px) {
-  .cofounder__content {
-    width: 100%; }
-    .cofounder__content p {
-      overflow-y: scroll;
-      height: 70vh; } }
-
 @media (max-width: 950px) {
   .cofounder__content {
     flex-direction: column; }
     .cofounder__content img {
       margin: 0;
       margin-bottom: 2rem; } }
+
+@media (max-width: 650px) {
+  .cofounder__content {
+    width: 100%; }
+    .cofounder__content p {
+      overflow-y: scroll;
+      padding: 1rem; } }
+
+@media (max-width: 520px) {
+  .header__content__heading {
+    font-size: 2.5rem; }
+  .header__content__heading2 {
+    font-size: 1.5rem; } }
+
+@media (max-width: 420px) {
+  .header__content__heading2 {
+    font-size: 1rem; } }
+
+@media (max-width: 470px) {
+  .cofounder__content p {
+    height: 30vh; } }
