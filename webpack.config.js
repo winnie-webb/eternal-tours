@@ -37,7 +37,8 @@ const reactJsBundle =
         ],
       }
     ]
-  }
+  }, 
+  watch: true
 }
 
 module.exports = reactJsBundle;

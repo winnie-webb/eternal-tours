@@ -1,0 +1,16 @@
+.paypal-form {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.paypal-form__button {
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  display: block;
+  width: 20rem;
+  padding: 2rem;
+  outline: none;
+  background: #3498db;
+  cursor: pointer;
+}

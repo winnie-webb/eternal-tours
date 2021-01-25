@@ -2,49 +2,49 @@
     "hotels":[
         {
             "name":"Breathless Resort",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Excellence Oyster Bay",
-            "smallPrice": 48,
-            "largePrice": 11
+            "smallPrice": "48",
+            "largePrice": "11"
         },
         {
             "name":"Holiday Inn",
-            "smallPrice": 24,
-            "largePrice": 6
+            "smallPrice": "24",
+            "largePrice": "6"
         },
         {
             "name":"Halfmoon Rose Hall",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Iberostar Grand",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         
         {
             "name":"Iberostar Suites",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Riu Negril",
-            "smallPrice": 73,
-            "largePrice": 17,
+            "smallPrice": "73",
+            "largePrice": "17",
             "place":"negril"
         },
         {
             "name":"Riu Montego Bay",
-            "smallPrice": 18,
-            "largePrice": 4
+            "smallPrice": "18",
+            "largePrice": "4"
         },
         {
             "name":"S Hotel",
@@ -53,109 +53,109 @@
         },
         {
             "name":"Grand Palladium Jamaica",
-            "smallPrice": 48,
-            "largePrice": 11
+            "smallPrice": "48",
+            "largePrice": "11"
         },
         {
             "name":"Jamaica Inn",
-            "smallPrice": 98,
-            "largePrice": 21
+            "smallPrice": "98",
+            "largePrice": "21"
         },
         {
             "name":"Ocean Coral Spring",
-            "smallPrice": 48,
-            "largePrice": 11
+            "smallPrice": "48",
+            "largePrice": "11"
         },
         {
             "name":"Bahia Principe Grand",
-            "smallPrice": 73,
-            "largePrice": 17,
+            "smallPrice": "73",
+            "largePrice": "17",
             "place":"negril"
         },
         {
             "name":"Hilton Rose Hall",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Royalton Blue Waters",
-            "smallPrice": 48,
-            "largePrice": 11
+            "smallPrice": "48",
+            "largePrice": "11"
         },  
         {
             "name":"Royalton White Sands",
-            "smallPrice": 48,
-            "largePrice": 11
+            "smallPrice": "48",
+            "largePrice": "11"
         },  
         {
             "name":"Royalton Negril",
-            "smallPrice": 73,
-            "largePrice": 17,
+            "smallPrice": "73",
+            "largePrice": "17",
             "place":"negril"
         },
         {
             "name":"Secrets St.James",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Secrets Wild Orchid",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         }, 
         {
             "name":"Sunset at the Palms",
-            "smallPrice": 73,
-            "largePrice": 17,
+            "smallPrice": "73",
+            "largePrice": "17",
             "place":"negril"
         },
         {
             "name":"Hyatt Rose Hall",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Jewel Grande",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Jewel Runaway Bay",
-            "smallPrice": 73,
-            "largePrice": 17
+            "smallPrice": "73",
+            "largePrice": "17"
         },
         {
             "name":"Jewel Paradise",
-            "smallPrice": 73,
-            "largePrice": 17
+            "smallPrice": "73",
+            "largePrice": "17"
         },
         {
             "name":"Riu Ocho Rios",
-            "smallPrice": 84,
-            "largePrice": 19,
+            "smallPrice": "84",
+            "largePrice": "19",
             "place" : "ocho rios"
         },
         {
             "name":"Sandals Montego Bay",
-            "smallPrice": 29,
-            "largePrice": 6,
+            "smallPrice": "29",
+            "largePrice": "6",
             "place" : "montego bay"
         },
         {
             "name":"Moonpalace Ocho Rios",
-            "smallPrice": 84,
-            "largePrice": 19,
+            "smallPrice": "84",
+            "largePrice": "19",
             "place" : "ocho rios"
         },
         {
             "name":"Sandals Ocho Rios",
-            "smallPrice": 84,
-            "largePrice": 19,
+            "smallPrice": "84",
+            "largePrice": "19",
             "place" : "ocho rios"
         }
         

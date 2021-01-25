@@ -1,10 +1,10 @@
 import React,{useState,useRef,useEffect} from "react";
-function HotelsAndPricing() {
+function HotelsAndPricing(props) {
+const {price,setPrice} = props;
 const urlParsed = new URLSearchParams(window.location.search);
 const queryHotel =  urlParsed.get("hotel");
 const queryPlace = urlParsed.get("place");
 
-const [price,setPrice] = useState(0);
 const [hotel,setHotel] = useState(`Select Your Hotel`);
 const selectedHotelElement = useRef();
 const checkedInput1_4 = useRef();

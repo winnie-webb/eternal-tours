@@ -9,20 +9,6 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
-.exp {
-  display: block;
-}
-.exp__slash {
-  margin: 1rem;
-  display: inline-block;
-}
-.exp__field {
-  outline: none;
-  border: none;
-  margin-top: 1rem;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
-}
 
 @media (max-width: 940px) {
   .checkouts,
