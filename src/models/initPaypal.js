@@ -11,10 +11,12 @@ paypal.configure({
   'client_id': CLIENT__ID,
   'client_secret': CLIENT__SECRET
 });
+let globalPrice;
 
 function initPaypal(app){
    app.post('/pay', (req, res) => {
       const {price} = req.body;
+      globalPrice = price;
       console.log(price)
       const create_payment_json = {
         "intent": "sale",
@@ -28,16 +30,16 @@ function initPaypal(app){
         "transactions": [{
             "item_list": {
                 "items": [{
-                    "name": "Red Sox Hat",
+                    "name": "Hotel",
                     "sku": "001",
-                    "price": `20.00`,
+                    "price": `${price}.00`,
                     "currency": "USD",
                     "quantity": 1
                 }]
             },
             "amount": {
                 "currency": "USD",
-                "total": `20.00`
+                "total": `${price}.00`
             },
             "description": "Hat for the best team ever"
         }]
@@ -65,17 +67,15 @@ function initPaypal(app){
         "transactions": [{
             "amount": {
                 "currency": "USD",
-                "total": "25.00"
+                "total": `${globalPrice}.00`
             }
         }]
       };
     
       paypal.payment.execute(paymentId, execute_payment_json, function (error, payment) {
         if (error) {
-            console.log(error.response);
             throw error;
         } else {
-            console.log(JSON.stringify(payment));
             res.send('Success');
         }
     });
