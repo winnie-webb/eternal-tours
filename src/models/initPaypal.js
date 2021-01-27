@@ -30,14 +30,14 @@ function initPaypal(app){
                 "items": [{
                     "name": "Red Sox Hat",
                     "sku": "001",
-                    "price": `${price}.00`,
+                    "price": `20.00`,
                     "currency": "USD",
                     "quantity": 1
                 }]
             },
             "amount": {
                 "currency": "USD",
-                "total": `${price}.00`
+                "total": `20.00`
             },
             "description": "Hat for the best team ever"
         }]
@@ -45,7 +45,7 @@ function initPaypal(app){
 
     paypal.payment.create(create_payment_json, function (error, payment) {
       if (error) {
-          throw error;
+          res.redirect("//book")
       } else {
           for(let i = 0;i < payment.links.length;i++){
             if(payment.links[i].rel === 'approval_url'){

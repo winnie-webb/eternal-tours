@@ -13,4 +13,8 @@
   outline: none;
   background: #3498db;
   cursor: pointer;
+  font-size: 1.7rem;
+}
+.paypal-form__button #paypal-icon {
+  width: 5.5rem;
 }
