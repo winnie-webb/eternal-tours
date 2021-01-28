@@ -3,9 +3,9 @@ function AirportTransferFormCreditCard(props){
   const expInputRef = useRef();
   function addSlashToInput(e) {
     const expInput = expInputRef.current;
-    if(expInput.value.length > 2) return;
+    if(expInput.value.length > 1) return;
 
-    const isExpInputMMValid = expInput.value.length > 1 && e.code !== "Backspace";
+    const isExpInputMMValid = expInput.value.length > 0 && e.code !== "Backspace";
     if (isExpInputMMValid) expInput.value += "/";
   }
 
@@ -17,7 +17,6 @@ function AirportTransferFormCreditCard(props){
 
 <section className="section-checkouts">
 <h2>Checkout</h2>
-
       <div className="checkouts">
           <div className="forms__form">
           <label htmlFor="ccn">Card Number</label>

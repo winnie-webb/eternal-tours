@@ -1,20 +1,12 @@
 .paypal-form {
-  display: flex;
-  justify-content: center;
-  padding: 3rem;
+  width: 70%;
+  margin: 3rem auto;
 }
-.paypal-form__button {
-  border-radius: 0.5rem;
-  border: none;
-  color: #fff;
-  display: block;
-  width: 21rem;
-  padding: 2rem;
-  outline: none;
-  background: #3498db;
-  cursor: pointer;
-  font-size: 1.7rem;
+.price-error-hidden {
+  display: none;
 }
-.paypal-form__button #paypal-icon {
-  width: 5.5rem;
+.price-error {
+  color: red;
+  margin: 1rem;
+  display: block !important;
 }

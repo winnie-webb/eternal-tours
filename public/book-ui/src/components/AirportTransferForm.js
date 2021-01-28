@@ -7,8 +7,9 @@ import cardIcon from "./svg/credit-card.svg";
 function AirportTransferForm(){
 
     const [price,setPrice] = useState(0);
+    const [paid,setPaid] = useState(false);
     const ATFCC = <AirportTransferFormCreditCard price={price}/>
-    const ATFP = <AirportTransferFormPaypal price={price} />
+    const ATFP = <AirportTransferFormPaypal setPaid={setPaid} price={price} />
     const [CurrentForm,setForm] = useState(ATFCC);
     const [currentCC,setCurrentCC] = useState("current switch-tab__tab");
     const [currentPaypal,setCurrentPaypal] = useState("switch-tab__tab");
@@ -25,6 +26,7 @@ function AirportTransferForm(){
       setCurrentCC("switch-tab__tab");
       setCurrentPaypal("current switch-tab__tab");          
     }
+    if(!paid){
     return (
         <section className="section-airport-transfer-form">
               <HotelsAndPricing price={price} setPrice={setPrice}/>
@@ -44,4 +46,9 @@ function AirportTransferForm(){
       </section>
     )
     }
+
+  else {
+    return <a style={{display:"block",textAlign:"center",color: "green", margin: "2rem",textDecoration:"none"}} href="/">Your payment was successul would you like to browse some more</a>
+  }
+}
     export default AirportTransferForm;

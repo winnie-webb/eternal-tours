@@ -47,7 +47,7 @@ function initPaypal(app){
 
     paypal.payment.create(create_payment_json, function (error, payment) {
       if (error) {
-          res.redirect("//book")
+          res.redirect("/book")
       } else {
           for(let i = 0;i < payment.links.length;i++){
             if(payment.links[i].rel === 'approval_url'){
