@@ -9,13 +9,20 @@ function AirportTransferForm(){
     const [price,setPrice] = useState(0);
     const [paid,setPaid] = useState(false);
     const ATFCC = <AirportTransferFormCreditCard price={price}/>
-    const ATFP = <AirportTransferFormPaypal setPaid={setPaid} price={price} />
+    const ATFP = <AirportTransferFormPaypal key="atfp" setPrice={setPrice} setForm={setForm} setPaid={setPaid} price={price} />
     const [CurrentForm,setForm] = useState(ATFCC);
     const [currentCC,setCurrentCC] = useState("current switch-tab__tab");
     const [currentPaypal,setCurrentPaypal] = useState("switch-tab__tab");
 
-    useEffect( () => setForm(CurrentForm),[price]);
-
+    useEffect( () => {
+      if(CurrentForm.key === "atfp"){
+        toggleToCCSection();
+        setTimeout(toggleToPaypal,1)
+      }
+      console.log(ATFP.key,CurrentForm.key);
+      console.log(JSON.stringify(CurrentForm) === JSON.stringify(ATFP))
+    },[price]);
+    
     function toggleToCCSection () {
       setForm(ATFCC);
       setCurrentCC("current switch-tab__tab");
@@ -24,7 +31,7 @@ function AirportTransferForm(){
     function toggleToPaypal(){
       setForm(ATFP);
       setCurrentCC("switch-tab__tab");
-      setCurrentPaypal("current switch-tab__tab");          
+      setCurrentPaypal("current switch-tab__tab"); 
     }
     if(!paid){
     return (

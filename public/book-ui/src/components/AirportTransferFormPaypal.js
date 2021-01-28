@@ -1,47 +1,46 @@
 import {useEffect,useState} from "react"
 function PaypalForm(props) {
-    const {price,setPaid} = props;
+    const {price,setPaid,setPrice} = props;
     const [errorStyle,setErrorStyle] = useState("price-error-hidden");
-    useEffect(() => {
-      setErrorStyle("price-error-hidden")
-    },[price])
+  
     useEffect(() => {
       window.paypal
-      .Buttons({
-        style:{
-          layout: "horizontal",
-          color:"blue",
-          shape: "pill",
-          fundingicons: "true",
-          label: "checkout",
-        },
-        createOrder: (data, actions) => {
-          return actions.order.create({
-            intent: "CAPTURE",
-            purchase_units: [
-              {
-                description: "Your description",
-                amount: {
-                  currency: "USD",
-                  value: price,
+        .Buttons({
+          style:{
+            layout: "horizontal",
+            color:"blue",
+            shape: "pill",
+            fundingicons: "true",
+            label: "checkout",
+          },
+          createOrder: (data, actions) => {
+            return actions.order.create({
+              intent: "CAPTURE",
+              purchase_units: [
+                {
+                  description: "Your description",
+                  amount: {
+                    currency: "USD",
+                    value: price,
+                  },
                 },
-              },
-            ],
-          });
-        },
-        onApprove: (data, actions) => {
-          fetch(actions.order.capture())
-          .then(setPaid(true))
-          console.log(order);
-        },
-        onError: (err) => {
-          setErrorStyle("price-error"),
-          console.error(err);
-        },
-      })
-      .render(".paypal-form");
-    },[])
-    
+              ],
+            });
+          },
+          onApprove: (data, actions) => {
+            fetch(actions.order.capture())
+            .then(setPaid(true))
+            console.log(order);
+          },
+          onError: (err) => {
+            setErrorStyle("price-error"),
+            console.error(err);
+          },
+        })
+        .render(".paypal-form");
+    },[price])
+
+  
     return (
       <>
         <p className={errorStyle}>Please ensure a hotel and group is selected</p>

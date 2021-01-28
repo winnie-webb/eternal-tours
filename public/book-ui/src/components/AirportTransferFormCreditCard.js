@@ -13,7 +13,7 @@ function AirportTransferFormCreditCard(props){
   
     return (
       <section className="section-form-transfer">
-        <form className="forms" action="/pay/cc" method="POST">
+        <form className="forms" action="/create-payment-intent" method="POST">
 
 <section className="section-checkouts">
 <h2>Checkout</h2>
