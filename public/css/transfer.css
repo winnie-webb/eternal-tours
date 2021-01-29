@@ -198,9 +198,11 @@ li {
   .gallery__card__content .card-pricings-btn {
     background-color: #718093; }
   .gallery__card__content .card-book-btn {
-    font-size: 1.8rem;
-    background-color: #0097e6;
-    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2); }
+    font-size: 1.7rem;
+    background-color: gold;
+    box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+    color: #3f3f3f;
+    font-weight: 600; }
 
 @media (max-width: 1100px) {
   .gallery {
@@ -242,20 +244,22 @@ h3 {
       cursor: pointer; }
 
 .hotels__hotel__payment-btn {
-  background-color: #0097e6;
-  padding: 1rem;
-  color: #fff;
-  border-radius: 1rem;
+  background-color: gold;
+  font-weight: 600;
+  padding: 0.7rem;
+  color: #3232ff;
+  border-radius: 4rem;
   box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin: 1rem;
+  width: 70%;
+  margin: 1rem auto;
   animation: shake 200ms 3 ease-in 1s; }
 
 @keyframes shake {
   0% {
-    transform: translateX(-1rem); }
+    transform: translateX(-0.7rem); }
   50% {
-    transform: translateX(1rem); }
+    transform: translateX(0.7rem); }
   100% {
     transform: translateX(0rem); } }
 
@@ -294,15 +298,3 @@ span {
 @media (max-width: 380px) {
   .hotels-height {
     height: min-content; } }
-
-::-webkit-scrollbar {
-  width: 15px;
-  border-radius: 10px; }
-
-::-webkit-scrollbar-track {
-  width: 100%;
-  background-color: #1488cc; }
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #2b32b2);
-  border-radius: 10rem; }

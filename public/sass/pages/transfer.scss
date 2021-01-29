@@ -105,9 +105,11 @@
     background-color: $secondary-btn-background-transfers;
   }
   & .card-book-btn {
-    font-size: 1.8rem;
-    background-color: $primary-btn-background-transfers;
+    font-size: 1.7rem;
+    background-color: gold;
     box-shadow: $base-box-shadow;
+    color: rgb(63, 63, 63);
+    font-weight: 600;
   }
 }
 @media (max-width: 1100px) {
@@ -160,21 +162,23 @@ h3 {
   }
 }
 .hotels__hotel__payment-btn {
-  background-color: $primary-btn-background-transfers;
-  padding: 1rem;
-  color: $base-color;
-  border-radius: 1rem;
+  background-color: gold;
+  font-weight: 600;
+  padding: 0.7rem;
+  color: rgb(50, 50, 255);
+  border-radius: 4rem;
   box-shadow: $base-box-shadow;
   text-align: center;
-  margin: 1rem;
+  width: 70%;
+  margin: 1rem auto;
   animation: shake 200ms 3 ease-in 1s;
 }
 @keyframes shake {
   0% {
-    transform: translateX(-1rem);
+    transform: translateX(-0.7rem);
   }
   50% {
-    transform: translateX(1rem);
+    transform: translateX(0.7rem);
   }
   100% {
     transform: translateX(0rem);
@@ -221,17 +225,4 @@ span {
   .hotels-height {
     height: min-content;
   }
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  width: 100%;
-  background-color: rgb(20, 136, 204);
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, rgb(43, 50, 178));
-  border-radius: 10rem;
 }
