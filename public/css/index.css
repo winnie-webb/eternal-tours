@@ -159,6 +159,10 @@ li {
   .video-wrapper {
     height: 20rem; } }
 
+@media (max-width: 420px) {
+  .video-wrapper {
+    display: none; } }
+
 .section-cards {
   text-align: center;
   width: 100%;
