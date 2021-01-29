@@ -6,7 +6,6 @@ const PORT = process.env.PORT || 4000;
 const hotels = require("./src/models/parseHotels");
 const cards = require("./src/models/parseCards");
 const initPaypal = require("./src/models/initPaypal");
-const initStripe = require("./src/routes/stripe");
 // Middleware
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
