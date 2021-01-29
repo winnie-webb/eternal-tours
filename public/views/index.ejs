@@ -11,6 +11,7 @@
     <title>Jamaica Eternal Tours</title>
 </head>
 <body>
+    <%- include("./layouts/preloader.ejs")  %> 
     <!-- Header Component -->
     <%- include("./layouts/header.ejs") %> 
     <main>
@@ -69,5 +70,16 @@
 </section>
 
     </main>
+    <script>
+        
+        window.addEventListener("load",removeLoader ) 
+         function removeLoader(){
+          const preloader = document.querySelector(".preloader");
+          preloader.style.display = "none"
+         }
+          
+         
+      </script>
+  
 </body>
 </html>

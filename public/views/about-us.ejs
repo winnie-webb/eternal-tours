@@ -9,6 +9,8 @@
     <script type="module" defer src="../js/about-us.js"></script>
 </head>
 <body>
+    <%- include("./layouts/preloader.ejs")  %> 
+
     <%- include("./layouts/header.ejs")  %> 
     <main>
         <%- include("./layouts/features.ejs") %> 
@@ -54,5 +56,16 @@
     </div>
     </section>
     </main>
+
+    <script>
+        
+        window.addEventListener("load",removeLoader ) 
+         function removeLoader(){
+          const preloader = document.querySelector(".preloader");
+          preloader.style.display = "none"
+         }
+          
+         
+      </script>
 </body>
 </html>

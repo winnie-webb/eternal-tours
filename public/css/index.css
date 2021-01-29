@@ -112,6 +112,37 @@ li {
   .section-main-content {
     grid-template-columns: 1fr; } }
 
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(59, 65, 28, 0.6);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .preloader__wrapper {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border-top: 4px solid #0097e6;
+    border-bottom: 4px solid #2ed573;
+    animation: rotate 1s infinite; }
+  .preloader__loader {
+    width: 10rem;
+    height: 0.2rem;
+    animation: rotate 1s infinite; }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg); } }
+
 .header {
   margin-bottom: 10rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.8)), url("../img/hero-opt.jpg");

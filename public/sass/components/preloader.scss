@@ -1,0 +1,31 @@
+.preloader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: rgba(59, 65, 28, 0.6);
+  height: 100vh;
+  width: 100vw;
+  @include centerFlexy;
+  &__wrapper {
+    width: 10rem;
+    height: 10rem;
+    @include centerFlexy;
+    border-radius: 50%;
+    border-top: 4px solid rgb(0, 151, 230);
+    border-bottom: 4px solid $base-heading-color-home;
+    animation: rotate 1s infinite;
+  }
+  &__loader {
+    width: 10rem;
+    height: 0.2rem;
+    // background-color: #14e21e;
+    animation: rotate 1s infinite;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
