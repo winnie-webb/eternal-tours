@@ -9,12 +9,14 @@
         {
             "name":"Excellence Oyster Bay",
             "smallPrice": "48",
-            "largePrice": "11"
+            "largePrice": "11",
+            "place":"falmoth"
         },
         {
             "name":"Holiday Inn",
             "smallPrice": "24",
-            "largePrice": "6"
+            "largePrice": "6",
+            "place":"montego bay"
         },
         {
             "name":"Halfmoon Rose Hall",
@@ -44,17 +46,20 @@
         {
             "name":"Riu Montego Bay",
             "smallPrice": "18",
-            "largePrice": "4"
+            "largePrice": "4",
+            "place" :"montego bay"
         },
         {
             "name":"S Hotel",
             "smallPrice": "14",
-            "largePrice": "3"
+            "largePrice": "3",
+            "place":"montego bay"
         },
         {
-            "name":"Grand Palladium Jamaica",
+            "name":"Grand Palladium Hotel",
             "smallPrice": "48",
-            "largePrice": "11"
+            "largePrice": "11",
+            "place":"lucea"
         },
         {
             "name":"Jamaica Inn",
@@ -64,13 +69,14 @@
         {
             "name":"Ocean Coral Spring",
             "smallPrice": "48",
-            "largePrice": "11"
+            "largePrice": "11",
+            "place": "falmoth"
         },
         {
             "name":"Bahia Principe Grand",
             "smallPrice": "73",
             "largePrice": "17",
-            "place":"negril"
+            "place":"falmoth"
         },
         {
             "name":"Hilton Rose Hall",
@@ -81,12 +87,14 @@
         {
             "name":"Royalton Blue Waters",
             "smallPrice": "48",
-            "largePrice": "11"
+            "largePrice": "11",
+            "place":"falmoth"
         },  
         {
             "name":"Royalton White Sands",
             "smallPrice": "48",
-            "largePrice": "11"
+            "largePrice": "11",
+            "place": "falmoth"
         },  
         {
             "name":"Royalton Negril",
@@ -127,12 +135,14 @@
         {
             "name":"Jewel Runaway Bay",
             "smallPrice": "73",
-            "largePrice": "17"
+            "largePrice": "17",
+            "place":"falmoth"
         },
         {
             "name":"Jewel Paradise",
             "smallPrice": "73",
-            "largePrice": "17"
+            "largePrice": "17",
+            "place":"falmoth"
         },
         {
             "name":"Riu Ocho Rios",
@@ -146,6 +156,8 @@
             "largePrice": "6",
             "place" : "montego bay"
         },
+
+
         {
             "name":"Moonpalace Ocho Rios",
             "smallPrice": "84",
@@ -157,7 +169,154 @@
             "smallPrice": "84",
             "largePrice": "19",
             "place" : "ocho rios"
+        },
+        {
+            "name":"Hibiscus Lodge Hotel",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Pineapple Court Hotel",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Ocean Palms",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Marine View Hotel",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Pineapplesuites Hotel",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Marina Villa ",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Villa Sand Castle",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+        {
+            "name":"Wizzy Apartment",
+            "smallPrice": "84",
+            "largePrice": "19",
+            "place" : "ocho rios"
+        },
+
+
+        {
+            "name":"Coca La Palm",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"White Sands Negril",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Negril Palms",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Catcha Falling Star",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Kaiser's Hotel",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Negril Treehouse Resort",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Shields Negril Villa",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Xtabi Resort",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Yellow Bird Sea",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+        {
+            "name":"Legends Beach Resort",
+            "smallPrice": "73",
+            "largePrice": "17",
+            "place":"negril"
+        },
+
+
+        {
+            "name":"Lorenton Hideaway",
+            "smallPrice": "48",
+            "largePrice": "11",
+            "place":"lucea"
+        },
+        {
+            "name":"Blue Paloma",
+            "smallPrice": "48",
+            "largePrice": "11",
+            "place":"lucea"
+        },
+
+
+        {
+            "name":"Cardiff Hotel",
+            "smallPrice": "48",
+            "largePrice": "11",
+            "place": "falmoth"
+        },
+        {
+            "name":"Royal Decameron",
+            "smallPrice": "48",
+            "largePrice": "11",
+            "place": "falmoth"
+        },
+        {
+            "name":"Villa Turrasann",
+            "smallPrice": "48",
+            "largePrice": "11",
+            "place": "falmoth"
         }
+        
+
+
         
     ]
 }

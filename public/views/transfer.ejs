@@ -22,9 +22,9 @@
             <div class="gallery">
                 <figure class="gallery__card">
                 <img src="../img/grand-palladium.jpg" alt="Grand Palladium Hotel">
-                <h2>Hanover</h2>
+                <h2>Lucea</h2>
                 <div class="gallery__card__content">
-                    <a href="/book"> <div class="gallery__card__content__btns card-book-btn">Book</div></a>
+                    <a href="/book?place=lucea"> <div class="gallery__card__content__btns card-book-btn">Book</div></a>
                     <div class="gallery__card__content__btns card-pricings-btn">Check Pricings</div>
                 </div>
                 </figure>
@@ -96,20 +96,20 @@
         <section class="section-transfers">
             <h3 class="sub-heading">Popular Hotels</h3>
             <div class="hotels">
-               <% hotels.forEach((hotel) => {%>
+               <% for(let i = 0; i < 27; i++){%>
                    <div class="hotels__hotel">
                        <div class="hotels__hotel__name">
                            <span class="right-arrow"></span>
-                        <span><%= hotel.name %></span>
+                        <span><%= hotels[i].name %></span>
                        </div>
                        <ul class="hotels__hotel__description hotels-hide-description">
-                           <li><b>$<%= hotel.smallPrice %> USD</b> : 1- 4  passengers traveling as a private group  </li>
-                           <li><b>$<%= hotel.largePrice%> USD (per person)</b>  : 5- 9 passengers traveling as a private group </li>
+                           <li><b>$<%= hotels[i].smallPrice %> USD</b> : 1- 4  passengers traveling as a private group  </li>
+                           <li><b>$<%= parseInt(hotels[i].smallPrice) * 1.5%> USD (per person)</b>  : 5- 9 passengers traveling as a private group </li>
                            <li>Groups of 10 or more please contact us for info on the group rate </li>
-                           <a href="/book/?hotel=<%= hotel.name %>"><li class="hotels__hotel__payment-btn">Book</li></a>
+                           <a href="/book/?hotel=<%= hotels[i].name %>"><li class="hotels__hotel__payment-btn">Book</li></a>
                         </ul>
                    </div>
-               <%})%>
+               <%}%>
             </div>
             <p style="margin:4rem; text-align: center;font-weight: bold;">Please note that major currencies accepted : £, €, CA$ & USD *</p>
 

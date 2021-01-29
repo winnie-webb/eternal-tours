@@ -37,6 +37,9 @@ fetch("/hotels")
         filterHotels = hotel => hotel.place === "falmoth" ;
         break;
 
+        case "lucea" : 
+        filterHotels = hotel => hotel.place === "lucea" ;
+        break;
     }
 
 }
@@ -74,10 +77,10 @@ function controlPricing() {
 
     if ( areOptionsValid ){
         hotelsJSON.map(hotel => {
-            if(selectedHotel === hotel.name){
+        if(selectedHotel === hotel.name){
             if (input1_4) setPrice(hotel.smallPrice);
-                else if (input5_9) setPrice(hotel.largePrice);
-                else setPrice(0)
+            else if (input5_9) setPrice(hotel.smallPrice * 1.5);
+            else setPrice(0)
             return hotel;
             }
           
