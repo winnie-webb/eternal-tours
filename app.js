@@ -28,6 +28,15 @@ app.get("/book",(req,res) => res.render("book"));
 
 app.get("/about-us",(req,res) => res.render("about-us",{title:"Welcome To JETT"}));
 
+app.get("/home-sitemap",(req,res) => {
+    res.sendFile(`${__dirname}/public/home-sitemap.xml`)
+})
+app.get("/aboutus-sitemap",(req,res) => {
+    res.sendFile(`${__dirname}/public/aboutus-sitemap.xml`)
+})
+app.get("/transfer-sitemap",(req,res) => {
+    res.sendFile(`${__dirname}/public/transfer-sitemap.xml`)
+})
 app.post("/email",(req,res) => require("./src/models/sendMail")(nodemailer,req,res));
 app.listen(PORT,() => console.log("Server has started"))
 
