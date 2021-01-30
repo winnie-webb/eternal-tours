@@ -18,6 +18,10 @@ body {
   padding: 2rem;
   overflow-x: hidden; }
 
+@media (max-width: 650px) {
+  body {
+    padding: 0.5rem; } }
+
 a {
   color: #fff; }
 
@@ -48,7 +52,7 @@ li {
   .content:hover {
     transform: scale(1.04); }
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .section-main-content {
     grid-template-columns: repeat(2, 1fr); } }
 

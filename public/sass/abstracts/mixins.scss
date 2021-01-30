@@ -13,7 +13,11 @@
     opacity: 1;
   }
 }
-
+@mixin centerButton() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @mixin card-top-style($bg-img-url) {
   height: 50%;
   margin-bottom: auto;
