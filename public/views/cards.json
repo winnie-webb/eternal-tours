@@ -4,39 +4,39 @@
         "id":1,
         "price": "$300",
         "name" : "Dunn's River Falls",
-        "type" : "Adventurous & Fun"
+        "type" : "Try climbing the falls"
     },
     {
         "id":2,
         "price": "$300",
         "name" : "Martha Brae River",
-        "type" : "Relaxing & Adventurous"
+        "type" : "Have a Romantic Trip"
     },
     {
         "id":3,
         "price": "$300",
         "name" : "Negril Beach",
-        "type": "Relaxing & Fun"
+        "type": "Bask in the sunshine"
     },
     {
         "id":4,
         "price": "$300",
         "name" : "Blue Mountain",
-        "type" : "Adventurous & Relaxing"
+        "type" : "Venture through the hills"
     },
    
     {
         "id":6,
         "price": "$300",
-        "name" : "YS Falls",
-        "type" : "Relaxing & Fun"
+        "name" : "River Tubing",
+        "type" : "Enjoy A Cool Tubing"
 
     },
     {
         "id":7,
         "price": "$300",
         "name" : "Chukka ATV",
-        "type" : "Adventurous & Fun"
+        "type" : "Ride through a Safari"
     }
     ]
 }

@@ -18,6 +18,10 @@ body {
   padding: 2rem;
   overflow-x: hidden; }
 
+@media (max-width: 650px) {
+  body {
+    padding: 0.5rem; } }
+
 a {
   color: #fff; }
 
@@ -104,7 +108,7 @@ li {
   .content:hover {
     transform: scale(1.04); }
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
   .section-main-content {
     grid-template-columns: repeat(2, 1fr); } }
 
@@ -228,8 +232,8 @@ h2 {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/dunns-river-opt.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -239,8 +243,8 @@ h2 {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/martha-brae.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -250,8 +254,8 @@ h2 {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/negril.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -261,8 +265,8 @@ h2 {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/blue-mountain-opt.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -270,10 +274,10 @@ h2 {
   height: 50%;
   margin-bottom: auto;
   background-size: cover;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/ys-falls.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/river-tubing.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -283,8 +287,8 @@ h2 {
   background-size: cover;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/chukka-atv.jpg");
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: #fff;
   font-size: 2rem; }
 
@@ -300,11 +304,7 @@ h2 {
   .card-btm__link {
     display: block;
     text-align: center;
-    color: #acacac;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem; }
+    color: #acacac; }
   .card-btm__button {
     padding: 0.8rem;
     border-radius: 0.4rem;
@@ -312,20 +312,29 @@ h2 {
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
     background: #f39c12;
     cursor: pointer;
-    width: 22rem;
-    transition: transform 400ms;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: rgba(0, 0, 0, 0.9);
+    width: 20rem;
     font-weight: 600;
-    display: block;
-    bottom: 7rem;
+    opacity: 0.9;
+    transition: transform 400ms, opacity 400ms;
+    color: rgba(0, 0, 0, 0.9);
     text-align: center; }
     .card-btm__button:hover {
-      transform: translateY(-0.5rem); }
-    .card-btm__button:hover {
-      transform: translate(-50%, -0.5rem); }
+      opacity: 1; }
+
+#learn-btn {
+  width: 15rem;
+  position: absolute;
+  bottom: -5.9rem;
+  right: 2rem;
+  opacity: 0.5;
+  font-weight: 600; }
+
+.card-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
 
 .card-top__img {
   width: 90%;
@@ -341,6 +350,34 @@ h2 {
   .cards__card {
     width: 80%;
     margin: 0 auto; } }
+
+.section-sub-content {
+  color: #5f5f5f;
+  width: 70%;
+  margin: 3rem auto;
+  box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 0.5rem; }
+
+.sub-content__heading {
+  text-align: left;
+  color: #f39c12;
+  white-space: nowrap; }
+
+.sub-content__content {
+  line-height: 3.5rem; }
+
+@media (max-width: 350px) {
+  .sub-content__heading {
+    font-size: 2.5rem; } }
+
+@media (max-width: 650px) {
+  .section-sub-content {
+    width: 100%;
+    margin: 0 auto; }
+  .sub-content__content {
+    height: 35vh;
+    overflow-y: scroll; } }
 
 .gallery {
   display: grid;

@@ -5,16 +5,13 @@
   box-shadow: $base-box-shadow;
   background: $linear-gradient;
   cursor: pointer;
-  width: 22rem;
-  transition: transform 400ms;
+  width: 20rem;
+  font-weight: 600;
+  opacity: 0.9;
+  transition: transform 400ms, opacity 400ms;
   &:hover {
-    transform: translateY(-0.5rem);
+    opacity: 1;
   }
-}
-@mixin centerButton() {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 @mixin card-top-style($bg-img-url) {
@@ -27,9 +24,7 @@
       rgba(40, 180, 133, 0.8)
     ),
     url($bg-img-url);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centerFlexy();
   color: $base-color;
   font-size: 2rem;
 }
