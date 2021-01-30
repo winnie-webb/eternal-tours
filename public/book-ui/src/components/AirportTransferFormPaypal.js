@@ -18,6 +18,19 @@ window.paypal.Buttons({
   createOrder: function(data, actions) {
     return actions.order.create({
       intent: 'CAPTURE',
+      shipping_type: 'PICKUP',
+
+      purchase_units: [
+        {
+          amount: {
+            value: price,
+            currency_code: 'USD'
+          }
+        }
+      ],
+      application_context: {    
+          shipping_preference: 'NO_SHIPPING'
+      },
       payer: {
         name: {
           given_name: "PayPal",
@@ -39,12 +52,6 @@ window.paypal.Buttons({
           }
         }
       },
-      purchase_units: [
-        {
-          amount: {
-            value: price,
-            currency_code: 'USD'
-          },
           shipping: {
             address: {
               address_line_1: '2211 N First Street',
@@ -54,16 +61,13 @@ window.paypal.Buttons({
               postal_code: '95131',
               country_code: 'US'
             }
-          },
-        }
-      ]
-    });
+          }
+    })
   },
   onApprove: function(data, actions) {
     return actions.order.capture().then(function(details) {
       setPaid(true)
-      alert("Transaction was sucessful!")
-    });
+    })
   },
 
     onError: function (err) {

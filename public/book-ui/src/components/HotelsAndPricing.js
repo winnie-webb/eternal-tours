@@ -18,7 +18,7 @@ fetch("/hotels")
 .then(res => {
     let filterHotels;
     if(queryPlace){
-    setHotel(`Select Hotel ${queryPlace}`);
+    setHotel(`Select Hotel In ${queryPlace}`);
 
     switch (queryPlace){
         case "montego bay" : 
