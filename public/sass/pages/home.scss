@@ -133,9 +133,9 @@ h2 {
     bottom: 2rem;
   }
   &__button {
-    @include button-default(rgb(238, 255, 0));
+    @include button-default($global-button-bg-color);
     @include centerButton;
-    color: rgb(51, 102, 211);
+    color: $global-button-color;
     font-weight: 600;
     display: block;
     bottom: 7rem;
@@ -165,9 +165,7 @@ h2 {
   }
 }
 //  Gallery Component
-.section-gallery {
-  height: 80vh;
-}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

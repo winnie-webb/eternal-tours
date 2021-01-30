@@ -310,14 +310,14 @@ h2 {
     border-radius: 0.4rem;
     margin: 2rem auto;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
-    background: #eeff00;
+    background: #f39c12;
     cursor: pointer;
     width: 22rem;
     transition: transform 400ms;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    color: #3366d3;
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 600;
     display: block;
     bottom: 7rem;
@@ -341,9 +341,6 @@ h2 {
   .cards__card {
     width: 80%;
     margin: 0 auto; } }
-
-.section-gallery {
-  height: 80vh; }
 
 .gallery {
   display: grid;

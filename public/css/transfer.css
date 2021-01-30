@@ -230,9 +230,9 @@ li {
     background-color: #718093; }
   .gallery__card__content .card-book-btn {
     font-size: 1.7rem;
-    background-color: gold;
+    background-color: #f39c12;
     box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
-    color: #3f3f3f;
+    color: rgba(0, 0, 0, 0.9);
     font-weight: 600; }
 
 @media (max-width: 1100px) {
@@ -275,10 +275,10 @@ h3 {
       cursor: pointer; }
 
 .hotels__hotel__payment-btn {
-  background-color: gold;
+  background-color: #f39c12;
   font-weight: 600;
   padding: 0.7rem;
-  color: #3232ff;
+  color: rgba(0, 0, 0, 0.9);
   border-radius: 4rem;
   box-shadow: 0.2rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
