@@ -203,7 +203,7 @@ li {
   width: 100%;
   margin: 10rem auto; }
   .section-cards h2 {
-    color: #2ed573; }
+    color: #f39c12; }
 
 h2 {
   margin: 2rem;
@@ -365,7 +365,8 @@ h2 {
   white-space: nowrap; }
 
 .sub-content__content {
-  line-height: 3.5rem; }
+  line-height: 3rem;
+  font-size: 1.8rem; }
 
 @media (max-width: 350px) {
   .sub-content__heading {

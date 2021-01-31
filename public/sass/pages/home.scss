@@ -71,7 +71,7 @@
   width: 100%;
   margin: 10rem auto;
   & h2 {
-    color: $base-heading-color-home;
+    color: $global-button-bg-color;
   }
 }
 h2 {
@@ -184,7 +184,8 @@ h2 {
     white-space: nowrap;
   }
   &__content {
-    line-height: 3.5rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 350px) {
