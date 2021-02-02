@@ -15,6 +15,8 @@ function AirportTransferForm(){
     if(!paid){
     return (
         <section className="section-airport-transfer-form">
+        <p style={{fontSize:"1.2rem"}}>We only support transfers for Sangster International Airport at the moment *</p>
+
       <HotelsAndPricing price={price} setPaid={setPaid} setPrice={setPrice}/>
       {Form}
       </section>

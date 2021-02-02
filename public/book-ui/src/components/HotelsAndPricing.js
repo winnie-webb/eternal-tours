@@ -79,7 +79,7 @@ function controlPricing() {
         hotelsJSON.map(hotel => {
         if(selectedHotel === hotel.name){
             if (input1_4) setPrice(hotel.smallPrice);
-            else if (input5_9) setPrice(hotel.smallPrice * 1.5);
+            else if (input5_9) setPrice(hotel.smallPrice * 1.7);
             else setPrice(0)
             return hotel;
             }

@@ -31,37 +31,7 @@ window.paypal.Buttons({
       application_context: {    
           shipping_preference: 'NO_SHIPPING'
       },
-      payer: {
-        name: {
-          given_name: "PayPal",
-          surname: "Customer"
-        },
-        address: {
-          address_line_1: '123 ABC Street',
-          address_line_2: 'Apt 2',
-          admin_area_2: 'San Jose',
-          admin_area_1: 'CA',
-          postal_code: '95121',
-          country_code: 'US'
-        },
-        email_address: "customer@domain.com",
-        phone: {
-          phone_type: "MOBILE",
-          phone_number: {
-            national_number: "14082508100"
-          }
-        }
-      },
-          shipping: {
-            address: {
-              address_line_1: '2211 N First Street',
-              address_line_2: 'Building 17',
-              admin_area_2: 'San Jose',
-              admin_area_1: 'CA',
-              postal_code: '95131',
-              country_code: 'US'
-            }
-          }
+      
     })
   },
   onApprove: function(data, actions) {
