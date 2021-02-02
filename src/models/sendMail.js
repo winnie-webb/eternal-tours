@@ -1,4 +1,8 @@
-require('dotenv').config();
+if(process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
+
+
 function sendMail (nodemailer,req,res) {
   const {email,name,message} = req.body;
   const smtpTrans = nodemailer.createTransport({
