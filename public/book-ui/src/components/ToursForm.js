@@ -69,7 +69,7 @@ function ToursForm () {
 
             <div className="forms__form">
                 <label htmlFor="message">Message</label>
-                <textarea placeholder="Example : Hey Desmond, I would like to book a tour with for five persons. We will be arriving on June 13,2021 at 10:00 am" ref={messageElement} required id="message" name="message" className="input-field forms__form__field"></textarea>
+                <textarea placeholder="Example : Hey Desmond, I would like to book a tour for five persons. We will be arriving on June 13,2021 at 10:00 am" ref={messageElement} required id="message" name="message" className="input-field forms__form__field"></textarea>
             </div>
 
            )
@@ -113,7 +113,7 @@ function ToursForm () {
     )
     }
     else {
-        return <p style={{margin:"2rem",textAlign:"center"}}>Thank you! {sentMailResponse} <a style={{textDecoration:"none"}} href="/">Go Back</a></p>
+        return <p style={{margin:"2rem",textAlign:"center"}}>Thank you! {sentMailResponse} </p>
     }
 }
 export default ToursForm;

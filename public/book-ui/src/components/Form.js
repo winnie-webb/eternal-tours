@@ -9,6 +9,8 @@ const selectedForm = urlParams.get('selectedForm');
 const [currentAirportTransfer,setCurrentAirportTransfer] = useState("switch-forms__form");
 const [currentToursForm,setCurrentToursForm] = useState("switch-forms__form");
 const [CurrentForm, setCurrentForm] = useState();
+const [previousUrl, setPreviousUrl] = useState();
+
 
 function toggleToAirportTransferForm() {
   setCurrentAirportTransfer("switch-forms__form current-form");
@@ -25,10 +27,12 @@ useEffect(() => {
   if(isSelectedFormTours){
     toggleToToursForm();
     setCurrentForm(<ToursForm />);
+    setPreviousUrl("/");
   }
   else {
     toggleToAirportTransferForm();
     setCurrentForm(<AirportTransferForm />);
+    setPreviousUrl("/airport-transfer")
   }
 
 },[isSelectedFormTours])
@@ -38,7 +42,7 @@ useEffect(() => {
     return (
       
       <section className="form-components">
-
+        <p><a href={previousUrl}>Go Back</a></p>
         <div className="switch-forms">
           <div className={currentAirportTransfer} onClick= {() => {
             setCurrentForm(<AirportTransferForm />);

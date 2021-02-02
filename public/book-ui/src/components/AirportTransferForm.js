@@ -12,6 +12,7 @@ function AirportTransferForm(){
       setTimeout(() => setForm(<AirportTransferFormPaypal setPaid={setPaid} price={price}/>),0);
     },[price])
 
+
     if(!paid){
     return (
         <section className="section-airport-transfer-form">
@@ -24,7 +25,7 @@ function AirportTransferForm(){
     }
 
   else {
-    return <a style={{display:"block",textAlign:"center",color: "green", margin: "2rem",textDecoration:"none"}} href="/">Your payment was successul would you like to browse some more</a>
+    return <a style={{display:"block",textAlign:"center",color: "green", margin: "2rem",textDecoration:"none"}} href="/">Your payment was successul. We will contact you shortly</a>
   }
 }
     export default AirportTransferForm;
