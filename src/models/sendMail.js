@@ -8,7 +8,7 @@ function sendMail (nodemailer,req,res) {
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.GMAIL__USER,
       pass: process.env.GMAIL__PASS
