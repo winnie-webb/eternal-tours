@@ -8,7 +8,7 @@ function sendMail (nodemailer,req,res) {
   const smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.GMAIL__USER,
       pass: process.env.GMAIL__PASS
@@ -20,9 +20,12 @@ function sendMail (nodemailer,req,res) {
       subject: 'Book Tour',
       text: `${name} (${email}) says: ${message}`
     }
-    smtpTrans.sendMail(mailOpts)
-    .then(res.json({message: "Message was received"}))
-    // .catch(err => res.json({message: "Message was not received"}))
+    smtpTrans.sendMail(mailOpts,(err,info) => {
+      if(err) return res.json({success:false,message: "We did not receive your message. Please try again"})
+      
+      res.json({success:true,message: "Email Sent"})
+    })
+    
   
 }
 module.exports = sendMail;

@@ -27,7 +27,9 @@ function ToursForm () {
         .then(res => res.json())
         .then(res =>{
             setSentMailResponse(res.message);
-            setSentMessage(true)
+            if(res.success){
+                setSentMessage(true)
+            }
         })
         .catch(err => setSentMailResponse(err.message));
 
@@ -105,6 +107,7 @@ function ToursForm () {
 
     return (
         <section className="section-form-tours">
+            <p style={{color:"red"}}>{sentMailResponse}</p>
             <Form/>
         </section>
     )
