@@ -2,6 +2,7 @@ const hotels = require("../models/parseHotels");
 const cards = require("../models/parseCards");
 
 function initMainRoutes(app) {
+
     app.get("/",(req,res) => {
         res.render("index",{cards: cards,title:"Jamaica Eternal Tours"})
     })
@@ -11,7 +12,9 @@ function initMainRoutes(app) {
     app.get("/contactus",(req,res) => {
         res.redirect("/book?selectedForm=tours")
     })
-    app.get("/hotels",(req,res) => res.json(hotels));
+
+    app.get("/api/hotels",(req,res) => res.json(hotels));
+    app.get("/api/tours",(req,res) => res.json(cards));
     app.get("/book",(req,res) => res.render("book"));
     
     app.get("/about-us",(req,res) => res.render("about-us",{title:"Welcome To JETT"}));

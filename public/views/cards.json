@@ -2,41 +2,47 @@
     "cards" : [
     {
         "id":1,
-        "price": "$300",
-        "name" : "Dunn's River Falls",
-        "type" : "Try climbing the falls"
+        "price": "89",
+        "name" : "Dunn’s River Falls & Martha Brae River Rafting Combo Tour Package",
+        "type" : "Try climbing the falls",
+        "path" : "./img/dunns-river-opt.jpg"
     },
     {
         "id":2,
-        "price": "$300",
-        "name" : "Martha Brae River",
-        "type" : "Have a Romantic Trip"
+        "price": "30",
+        "name" : "Martha Brea River Rafting & Luminous Lagoon Combo Tour",
+        "type" : "Have a Romantic Trip",
+        "path" : "./img/luminous-lagoon.jpg"
     },
     {
         "id":3,
-        "price": "$300",
+        "price": "30",
         "name" : "Negril Beach",
-        "type": "Bask in the sunshine"
+        "type": "Bask in the sunshine",
+        "path" : "./img/negril.jpg"
     },
     {
         "id":4,
-        "price": "$300",
-        "name" : "Blue Mountain",
-        "type" : "Venture through the hills"
+        "price": "20",
+        "name" : "Blue Hole & River Rafting Ocho Rios",
+        "type" : "Venture through the hills",
+        "path" : "./img/blue-mountain-opt.jpg"
     },
    
     {
         "id":6,
-        "price": "$300",
-        "name" : "River Tubing",
-        "type" : "Tube along the river"
+        "price": "80",
+        "name" : "Blue Hole & River Rafting Ocho Rios",
+        "type" : "Tube along the river",
+        "path" : "./img/blue-hole.jpg"
 
     },
     {
         "id":7,
-        "price": "$300",
-        "name" : "Chukka ATV",
-        "type" : "Ride through a Safari"
+        "price": "300",
+        "name" : "Zipline , ATV & Horseback Riding Negril Combo Tour Package",
+        "type" : "Ride through a Safari",
+        "path" : "./img/chukka-atv.jpg"
     }
     ]
 }
